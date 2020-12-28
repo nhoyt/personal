@@ -1,0 +1,18 @@
+<!-- next-meeting.ent -->
+
+<!ENTITY meeting-title "Emotional Design">
+
+<!ENTITY meeting-speaker "Don Norman of Nielsen Norman Group and Northwestern University">
+
+<!ENTITY meeting-day-of-week "Wednesday">
+
+<!ENTITY meeting-month-day-year "April 30, 2003">
+
+<!ENTITY meeting-start-time "6:30 PM">
+
+<!ENTITY meeting-location "DePaul University, Loop Campus">
+
+<!ENTITY meeting-date "&meeting-day-of-week;, &meeting-month-day-year;">
+
+<!ENTITY meeting-url "meetings/20030430.html">
+

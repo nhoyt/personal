@@ -1,0 +1,20 @@
+@import url("http://index.relegant.com/media/style/common.css");
+@import url("resume.css");
+
+body {
+  border: none;
+  font-family: baskerville, georgia, "times new roman", serif;
+  font-size: 9pt;
+  margin: 16pt 32pt;
+}
+
+div#header {
+  margin: 12pt 0;
+}
+
+div.subtitle {
+  font-family: baskerville, georgia, "times new roman", serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 12pt;
+}

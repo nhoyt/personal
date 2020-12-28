@@ -1,0 +1,10 @@
+<!ENTITY % entities SYSTEM "../common/dtd/entities.dtd">
+%entities;
+
+<!ELEMENT quotations (quote)+ >
+
+<!ELEMENT quote (text+, src)>
+
+<!ELEMENT text (#PCDATA)*>
+
+<!ELEMENT src (#PCDATA)*>

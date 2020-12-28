@@ -1,0 +1,53 @@
+@import url('http://index.relegant.com/media/style/common.css');
+
+body {
+  font-family: helvetica, verdana, sans-serif;
+  font-size: 90%;
+  margin: 1.5em 22% 2.5em;
+  padding: 0 0.75em;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+#header {
+  margin-left: -3px;
+  margin-bottom: -12px;
+}
+
+div.roles, div.school {
+  margin-top: 1em;
+}
+
+div.roles {
+  font-weight: bold;
+}
+
+div.headline {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: -0.5em;
+}
+
+div.subtitle {
+  background: #E0E5E8;
+  margin-top: 1.25em;
+  margin-left: -2px;
+  padding: 2px 2px 1px;
+  font-family: helvetica, monaco;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ul.noindent {
+  margin-left: 1.3em;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+ul.noindent li {
+  padding-top: 0.25em;
+}
+
+ul.noindent li:first-child {
+  padding-top: 0;
+}

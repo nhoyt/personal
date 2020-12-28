@@ -1,0 +1,192 @@
+<!-- =============================================================
+File: 	inline-block.dtd
+Author:	Nicholas Hoyt
+============================================================== -->
+
+<!-- EXTERNAL DEPENDENCIES
+
+parameter entities:
+	block
+	inline
+	output-options
+
+-->
+
+<!-- INLINE ELEMENTS -->
+
+<!-- =============================================================
+b: bold text
+============================================================== -->
+
+<!ELEMENT b (%inline;)*>
+
+<!-- =============================================================
+br: inserts a line break with no vertical space after
+============================================================== -->
+
+<!ELEMENT br EMPTY>
+
+<!-- =============================================================
+emph: emphasized text
+============================================================== -->
+
+<!ELEMENT emph (%inline;)*>
+
+<!-- =============================================================
+i: italic text
+============================================================== -->
+
+<!ELEMENT i (%inline;)*>
+
+<!-- =============================================================
+image: can specify href on an image
+============================================================== -->
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+	src			CDATA				#REQUIRED
+	alt			CDATA				#REQUIRED
+	href		CDATA				#IMPLIED
+	width		CDATA				#IMPLIED
+	height		CDATA				#IMPLIED
+	usemap		CDATA				#IMPLIED
+>
+
+<!-- =============================================================
+line: separate line of text with no vertical space before
+============================================================== -->
+
+<!ELEMENT line (%inline;)*>
+
+<!-- =============================================================
+link: use of either href or name is required
+============================================================== -->
+
+<!ELEMENT link (%inline;)*>
+<!ATTLIST link
+	href		CDATA				#IMPLIED
+	name		CDATA				#IMPLIED
+>
+
+<!-- =============================================================
+note-ref: symbol attribute specifies a superscript character that
+serves as cross reference to a footnote
+============================================================== -->
+
+<!ELEMENT note-ref EMPTY>
+
+<!ATTLIST note-ref
+	symbol		CDATA				#IMPLIED
+>
+
+<!ELEMENT small (%inline;)*>
+
+<!ELEMENT sub (%inline;)*>
+
+<!ELEMENT sup (%inline;)*>
+
+<!-- BLOCK ELEMENTS -->
+
+<!-- =============================================================
+blockquote: left- and right-indented section of text
+============================================================== -->
+
+<!ELEMENT blockquote (%block;)*>
+
+<!ATTLIST blockquote
+	output		(%output-options;)	'all'
+>
+
+<!-- =============================================================
+list: vertically oriented, with optional labels
+	a: ordered: alphabetic character labels
+	n: no labels
+	o: ordered: numeric character labels
+	u: unordered: bullet labels
+============================================================== -->
+
+<!ELEMENT list (headline?, item+)>
+<!ATTLIST list
+	type		(a | n | o | u)		"u"
+	output		(%output-options;)	'all'
+>
+
+<!ELEMENT item (%inline; | list)*>
+
+<!ATTLIST item
+	output		(%output-options;)	'all'
+>
+
+<!-- =============================================================
+note: emphasized text block
+============================================================== -->
+
+<!ELEMENT note (%inline;)*>
+<!ATTLIST note
+	output		(%output-options;)	'all'
+>
+
+<!-- =============================================================
+para: text block with vertical space before
+============================================================== -->
+
+<!ELEMENT para (%inline; | headline | list)*>
+
+<!ATTLIST para
+	output		(%output-options;)	'all'
+>
+
+<!-- =============================================================
+headline: emphasized text followed by a line break
+============================================================== -->
+
+<!ELEMENT headline (%inline;)*>
+
+<!-- =============================================================
+subtitle: emphasized text with vertical space before and after
+============================================================== -->
+
+<!ELEMENT subtitle (%inline;)*>
+
+<!ATTLIST subtitle
+	output		(%output-options;)	'all'
+>
+
+<!-- =============================================================
+table: the align attribute controls how the table will be
+aligned with respect to its container
+============================================================== -->
+
+<!ELEMENT table (tr+)>
+<!ATTLIST table
+	align		(left | center | right)		#IMPLIED
+	width		CDATA						#IMPLIED
+	border		(yes | no)					#IMPLIED
+	output		(%output-options;)			'all'
+>
+
+<!ELEMENT tr (th | td)+>
+
+<!-- =============================================================
+th (table header): the align attribute controls how content is
+aligned within the th element
+============================================================== -->
+
+<!ELEMENT th (%inline;)*>
+<!ATTLIST th
+	align		(left | center | right) 	"center"
+	colspan		CDATA						#IMPLIED
+>
+
+<!-- =============================================================
+td (table data): the align attribute controls how content is
+aligned within the td element
+============================================================== -->
+
+<!ELEMENT td (%inline; | %block;)*>
+<!ATTLIST td
+	align		(left | center | right)		"left"
+	colspan		CDATA						#IMPLIED
+	valign		(top | middle | bottom)		#IMPLIED
+	width		CDATA						#IMPLIED
+>

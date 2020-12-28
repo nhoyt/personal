@@ -1,0 +1,25 @@
+<!-- glossary.dtd -->
+
+<!ENTITY % common-ent SYSTEM "common.ent">
+%common-ent;
+
+<!ENTITY % htmldoc SYSTEM "htmldoc.dtd">
+%htmldoc;
+
+<!ENTITY % docAttList
+	"name	CDATA	#REQUIRED
+	 date	CDATA	#REQUIRED"
+>
+
+<!-- DOCTYPE glossary -->
+
+<!ELEMENT glossary (column+)>
+<!ATTLIST glossary %docAttList;>
+
+<!ELEMENT column (entry)+>
+
+<!ELEMENT entry (term, desc)>
+
+<!ELEMENT term (%inline;)*>
+
+<!ELEMENT desc (%inline;)*>
