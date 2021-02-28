@@ -13,11 +13,11 @@ header, footer {
   color: #f0f0f0;
   background-color: steelblue;
   font-style: italic;
-  padding: 8px 12px;
 }
 
 header {
   letter-spacing: 0.15rem;
+  padding: 1.25rem;
 }
 
 footer {
@@ -25,6 +25,7 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   letter-spacing: 0.075rem;
+  padding: 0.625rem 1.25rem;
 }
 
 h1 {
