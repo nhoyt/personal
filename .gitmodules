@@ -1,0 +1,9 @@
+[submodule "dorico"]
+	path = dorico
+	url = https://gitlab.com/nhoyt/dorico.git
+[submodule "emacs"]
+	path = emacs
+	url = https://gitlab.com/nhoyt/emacs.git
+[submodule "portfolio"]
+	path = portfolio
+	url = https://gitlab.com/nhoyt/portfolio.git
