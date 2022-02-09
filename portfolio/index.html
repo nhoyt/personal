@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nicholas Hoyt: Design Portfolio</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Nicholas Hoyt: Design Portfolio</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Introduction</h2>
+        <div>
+          <p>This portfolio provides examples and descriptions of the user interface and interaction design work I've done on web applications, browser tools and extensions, accessibility bookmarklets and embedded HTML editor plugins over the past 25 years.</p>
+        </div>
+      </section>
+      <section class="hidden">
+        <h2>Introduction</h2>
+        <div>
+          <p>Welcome to my online design portfolio, where I describe some of the projects on which I've had the privilege of serving as lead designer.</p>
+          <p>Many of these projects, in particular those involving web applications, browser extensions or plugins, required the use of interaction design, a collection of methodologies best defined by Alan Cooper in his book <em>About Face: The Essentials of Interaction Design</em>.</p>
+          <p>While the concept of interaction design is not easy to define, Cooper begins by delving into a methodology he calls <em>goal-directed design</em>, which involves developing a deep understanding of users' goals as they relate to a digital product. From the very first chapter, one gets a sense of the ‘why’ and ‘how’ of the value and effectiveness of interaction design.</p>
+          <p>It is difficult to overstate how influential and important Cooper's <em>About Face</em> was to my professional development as a designer.</p>
+          <p>If you have an interest in UX/UI design, you owe it to yourself to <strong>get this book!</strong></p>
+        </div>
+        <figure>
+          <a href="#figure-00">
+            <img src="images/misc/about-face-4.jpg" alt="About Face book cover">
+          </a>
+          <figcaption>Interaction Design book</figcaption>
+        </figure>
+        <div class="overlay" id="figure-00">
+          <a href="#_">
+            <img src="images/misc/about-face-4.jpg" alt="About Face book cover: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>SkipTo Landmarks & Headings</h2>
+        <div>
+          <p>The main purpose of the SkipTo Landmarks & Headings browser extension is to provide keyboard-only users with a means for easily discovering and navigating to the landmark regions and top-level section headings of a web page, and conversely, for "skipping over" blocks of boilerplate content such as page headers and navigation menus.</p>
+          <p>There are two secondary purposes for the extension: (a) allow anyone interested in structural navigation to view an outline of the page and easily navigate to a desired section, and (b) allow web designers and developers to evaluate the use of landmarks and headings on the page (for example, to check whether headings are properly structured).</p>
+          <details>
+            <summary>About the Design</summary>
+
+            <h3>Question</h3>
+            <p>What keyboard shortcuts should be used to facilitate keyboard navigation?</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Use the first character of each menu item as a shortcut key to move to the next item that begins with that character (from WAI-ARIA Authoring Practices).</li>
+              <li>For landmarks: use single-letter mnemonics for shortcuts (for example: press m for main, n for navigation, etc.) and for headings: press a number key 1–6 to move to the next heading of that level.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <ul>
+              <li>Typically, each page visited has very different content from other pages. This includes the text content of its headings. For the first characters of the headings to be useful, the user must become familiar with the text content of the headings.</li>
+              <li>Some pages may have many headings (it is not uncommon for large pages to have over 100). The usefulness of first characters as shortcuts in these cases is diminished.</li>
+              <li>Because the menu items are ever-changing from one page to the next (unlike the menus for most software applications), the option for using single-letter mnemonics for landmarks and number keys for headings was chosen.</li>
+            </ul>
+
+            <h3>Question</h3>
+            <p>By default, which landmarks and heading levels should be included in the menu, and in what order should landmarks be displayed? Note: Headings are always displayed in document order.</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Show all landmarks and headings.</li>
+              <li>Limit the number of landmarks and headings in the menu to maximize usability.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <ul>
+              <li>Based on what this extension is trying to achieve (i.e., serving mainly as an assistive technology), it is felt that only certain landmarks should be displayed and in a particular order.</li>
+              <li>The extension includes ‘main’, ‘search’, ‘navigation’, ‘complementary’ (optional) and ‘contentinfo’ landmarks, in that order. It does not include ‘banner’, ‘form’ or ‘application’ landmarks.</li>
+              <li>For some pages, showing all of the headings can result in many menu items, sometimes numbering in the hundreds. By default, only heading levels 1–3 are shown.</li>
+            </ul>
+          </details>
+          <p>SkipTo Landmarks & Headings was published in June 2021 as both a <a href="https://chrome.google.com/webstore/detail/skipto-landmarks-headings/fjkpbfcodhflpdildjbmdhhmcoplghgf">Chrome extension</a> and a <a href="https://addons.mozilla.org/en-US/firefox/addon/skipto/">Firefox extension</a>.</p>
+        </div>
+        <figure>
+          <a href="#figure-01">
+            <img src="images/illinois/skip-to-tpgi.png" alt="Skip To screenshot">
+          </a>
+          <figcaption>SkipTo Landmarks & Headings</figcaption>
+        </figure>
+        <div class="overlay" id="figure-01">
+          <a href="#_">
+            <img src="images/illinois/skip-to-tpgi.png" alt="Skip To screenshot: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>Accessible IT Group: Web Design</h2>
+        <div>
+          <p>Designed over the period from summer of 2020 to spring of 2021 and utilizing a WordPress theme mostly built from scratch during that same period, the <a href="https://accessibleit.disability.illinois.edu/">Accessible IT Group website</a> highlights the training courses, accessibility tools and other services that the group provides.</p>
+          <p>Aside from its role as a publishing platform for the content described above, one of the main purposes for building the site was for it to serve as an example of how to design and build a website with accessibility as a primary focus.</p>
+          <p>For example, the user interface, and in particular the menu system, incorporates SVG images that are capable of adapting their foreground colors to maintain visibility when people with visual impairments are using high-contrast mode.</p>
+          <p>Also, as one would expect of current websites, the design is fully responsive in adapting to the widely varying screen dimensions of modern devices.</p>
+          <details>
+            <summary>About the Design</summary>
+            <p>There were two purposes in creating the Accessible IT Group (AITG) website:</p>
+            <ol>
+              <li>To communicate what the group offered by way of services and software tools</li>
+              <li>To provide a WordPress website that would serve as a model for functional accessibility in modern web design</li>
+            </ol>
+
+            <p>The functional accessibility features are exemplified by the following:</p>
+            <ul>
+              <li>Navigation menu based on WAI-ARIA menu pattern</li>
+              <li>SkipTo script providing structural navigation of page content</li>
+              <li>Proper use of headings for labeling sections of content</li>
+              <li>Responsive design for various form factors (menu system adapts down to phone screen size)</li>
+              <li>Use of SVG images in the user interface that maintain visibility in high contrast mode (menu icons, search button icon)</li>
+            </ul>
+
+            <p>The visual design is based on UIUC design guidelines for fonts and color palette.</p>
+          </details>
+        </div>
+        <figure>
+          <a href="#figure-03">
+            <img src="images/illinois/aitg-website.png" alt="AITG website screenshot">
+          </a>
+          <figcaption>Accessible IT Group website</figcaption>
+        </figure>
+        <div class="overlay" id="figure-03">
+          <a href="#_">
+            <img src="images/illinois/aitg-website.png" alt="AITG website screenshot: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>A11yFirst Project: CKEditor Plugins</h2>
+        <div>
+          <p>The <a href="https://ckeditor.com/cke4/addons/search/plugins/a11yfirst">A11yFirst Plugins for CKEditor</a> are document editing enhancements that promote and encourage the creation of accessible content as you edit.</p>
+          <p>In contrast to the accessibility checker approach for embedded HTML editors, the A11yFirst Project takes a proactive approach to accessible authoring.</p>
+          <p>The A11yFirst Project was responsible for creating four editing plugins for CKEditor 4: ‘Heading/Paragraph’, ‘Character Style’, ‘Image’ and ‘Link’, along with a ‘Help’ system that explained the various choices in the associated dialog boxes and menus.</p>
+
+          <details>
+            <summary>About the Design</summary>
+
+            <h3>Question</h3>
+            <p>Which editor functions provide opportunities for proactively assisting authors in creating accessible content as they edit, as opposed to forcing authors to use accessibility checking tools that are tangential to the editing process?</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Inserting headings</li>
+              <li>Inserting images</li>
+              <li>Creating links</li>
+              <li>Creating and editing tables</li>
+              <li>Using character styles (by discouraging the use of non-semantic visual styling of text, such as using large fonts in bold typeface to simulate headings)</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <p>Based on the limited resources available to the development group, we ruled out the creation of a tables plugin. The other four options were chosen for design and development.</p>
+
+            <h3>Question</h3>
+            <p>In some cases, image accessibility requirements involve more than adding simple alternative text for each image. How do we help authors understand that complex images require extra steps that go beyond adding 'alt text' in order to provide all of the information conveyed by such images to people with visual impairments? (Thorny problem)</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Explain (via the user interface) the concept of complex images and the additional accessibility requirements that their use entails.</li>
+              <li>Explain/imply via the user interface that ‘alt text’ is insufficient for conveying all of the information conveyed by certain types of images such as charts, graphs and diagrams, and guide them on ways in which they can provide this information as part of the document itself.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <ul>
+              <li>User testing of various approaches made it clear that trying to explain the concept of complex images did not work. People had a difficult time grasping what the implications were of this concept.</li>
+              <li>People were more receptive to the idea that ‘alt text’, which provides a concise description of a simple image (for example, ‘car in motion on a country road’) was not useful as a text alternative for an image that conveys a large amount of information.</li>
+            </ul>
+          </details>
+
+          <p>There have been more than 15,000 downloads of the A11yFirst plugins from the CKEditor website in the past eighteen months.</p>
+        </div>
+        <figure>
+          <a href="#figure-04">
+            <img src="images/illinois/a11yfirst-image.png" alt="A11yFirst Image screenshot">
+          </a>
+          <figcaption>A11yFirst Image plugin</figcaption>
+        </figure>
+        <div class="overlay" id="figure-04">
+          <a href="#_">
+            <img src="images/illinois/a11yfirst-image.png" alt="A11yFirst Image screenshot: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>Accessibility Bookmarklets</h2>
+        <div>
+          <p>The <a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a> are the end result of what started as a ‘Show and Tell’ session at a monthly campus accessibility meeting. A local web developer demonstrated a bookmarklet she had developed that displayed the ARIA landmark regions on a web page.</p>
+          <p>It became apparent that similar types of bookmarklets could be developed that provided interactive visualizations corresponding to other categories of accessibility requirements, such as <em>headings</em>, <em>lists</em>, <em>images</em> and <em>forms</em>.</p>
+          <p>Through collaboration over many months, we developed a set of five bookmarklets, which many developers have found useful in getting an initial sense of whether a web page meets certain accessibility requirements.</p>
+        </div>
+        <figure>
+          <a href="#figure-05">
+            <img src="images/illinois/bookmarklets.png" alt="Accessibility Bookmarklets: screenshot">
+          </a>
+          <figcaption>Accessibility Bookmarklets</figcaption>
+        </figure>
+        <div class="overlay" id="figure-05">
+          <a href="#_">
+            <img src="images/illinois/bookmarklets.png" alt="Accessibility Bookmarklets: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>AInspector WCAG: Firefox Extension</h2>
+        <div>
+          <p><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/">AInspector WCAG</a> is an open source add-on for the Firefox browser that analyzes the page loaded in the active tab for compliance with accessibility requirements defined by the Web Content Accessibility Guidelines (WCAG), Accessible Rich Internet Applications (WAI-ARIA), and for proper use of accessibility features defined by the HTML5 standard.</p>
+          <p>AInspector WCAG uses the same Evaluation Library as the Functional Accessibility Evaluator, and thus its evaluation results are presented in the same format, using the terminology and rulesets, as FAE, except that only one page is evaluated.</p>
+          <details>
+            <summary>About the Design</summary>
+            <h3>Question</h3>
+            <p>How to align all of the terminology and labeling of features present in AInspector with those in FAE and keep them in sync?</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Manually and simultaneously make changes in both applications whenever a terminology or feature change occurs in one or the other.</li>
+              <li>Create a separate repository where all of the terminology and UI labeling is defined, and then make sure that both applications are kept in sync with it.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <p>Based on a 2002 paper, <a href="https://www.researchgate.net/publication/220382707_Conceptual_models_begin_by_designing_what_to_design"><i> Conceptual models: begin by designing what to design (PDF)</i></a> by Jeff Johnson and Austin Henderson, I created the <a href="https://github.com/ainspector/design/wiki/Conceptual-Model-for-Web-Accessibility-Evaluation">Conceptual Model for Web Accessibility Evaluation</a>. I was the author and editor of the conceptual model, but its content is based on extensive input from our multi-organization group whose membership included a number of web accessibility experts.</p>
+            <p>This conceptual model served as the basis for all terminology, and the organization of evaluation results in all AInspector screens and FAE reports.</p>
+          </details>
+          <p>The first publicly available version (0.16.5) of AInspector WCAG (then called AInspector Sidebar) was released in Sep. 2014. It was designed and developed using <a href="https://en.wikipedia.org/wiki/XUL">XUL</a> and <a href="https://en.wikipedia.org/wiki/XPCOM">XPCOM</a>, which predated the current WebExtensions platform.</p>
+          <p>Mozilla stopped supporting XUL-based add-ons in Nov. 2017, at which time the add-on was ported to WebExtensions APIs and renamed AInspector WCAG.</p>
+        </div>
+        <figure>
+          <a href="#figure-07">
+            <img src="images/illinois/ainspector-wcag.png" alt="AInspector WCAG: screenshot">
+          </a>
+          <figcaption>AInspector WCAG</figcaption>
+        </figure>
+        <div class="overlay" id="figure-07">
+          <a href="#_">
+            <img src="images/illinois/ainspector-wcag.png" alt="AInspector WCAG: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>Functional Accessibility Evaluator (FAE)</h2>
+        <div>
+          <p>When I joined what is now called the Accessible IT Group at the University of Illinois in 2005, I worked as lead designer and front end developer of version 1.0 of the <a href="https://fae.disability.illinois.edu/">Functional Accessibility Evaluator</a>, a web application that uses web crawling to evaluate pages within websites.</p>
+          <p>The original working prototypes were developed using PHP, but after a good deal of research, we transitioned to the Django platform. I designed and developed all of the Django templates that comprise the user interface of the application.</p>
+          <p>I also developed a conceptual model for web accessibility evaluation that was instrumental in creating the terminology and task flows that users could readily understand.</p>
+          <p>FAE was the first tool we developed that was built on top of the Evaluation Library, which encodes a set of accessibility rules that was the result of years of collaboration with accessibility professionals at the University of Illinois and from other universities and industries.</p>
+          <details>
+            <summary>About the Design</summary>
+            <p>When you use FAE to evaluate the accessibility of a website, the evaluation results for each page consist of many data points: over 100 rules divided into 12 categories are applied, and the results for each rule include lists of elements that passed or failed. With this much data, our initial usability testing showed that users were feeling overwhelmed and unsure of how to apply the results in order to improve the accessibility of their websites.</p>
+
+            <h3>Question</h3>
+            <p>How should we organize and present the evaluation results such that they are useful to people who may have various roles regarding their responsibilities for ensuring that websites are accessible?</p>
+
+            <h3>Options</h3>
+            <p>We conducted a user research activity known as a “wants and needs analysis” in which we posed the question: If you could have any kind of accessibility evaluation tool at your disposal, how would you want to use it and what would you hope to be able to do with the results it produces? The analysis produced the following insights:</p>
+            <ul>
+              <li>The tool should help developers understand the accessibility issues they need to address, as well as provide all of the necessary information on “how” to address those issues. In other words, it should answer the questions: what is broken and how do I fix it?</li>
+              <li>While the tool may be very useful for web developers, how does a developer convince her manager that these issues are worth allocating significant resources in order to address them?</li>
+              <li>Could the evaluation results be presented in multiple ways, such that a developer would understand the low-level technical aspects of how to meet particular accessibility requirements, while at the same time, a non-technical person, perhaps a manager responsible for the content and main purpose of a website, could understand overall the degree to which the website succeeds or fails in meeting accessibility requirements?</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <p>In analyzing the results of the “wants and needs analysis”, we determined that the starting point for any user, technical or non-technical, when presented with the FAE evaluation results, should be a “Summary Report” that provides numerical data showing percentages of rules that passed or failed.</p>
+            <p>The Summary Report should answer the following question in a straightforward manner: Are we in good shape, bad shape, or somewhere in between?</p>
+            <p>We concluded that if done properly, the Summary Report is what a developer could show a manager in order to give them a general sense of where things stand at present regarding the accessibility of their website to people with disabilities.</p>
+          </details>
+        </div>
+        <figure>
+          <a href="#figure-08">
+            <img src="images/illinois/fae-summary.png" alt="FAE Summary Report: screenshot">
+          </a>
+          <figcaption>FAE Summary Report</figcaption>
+        </figure>
+        <div class="overlay" id="figure-08">
+          <a href="#_">
+            <img src="images/illinois/fae-summary.png" alt="FAE Summary Report: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section class="hidden">
+        <h2>Conceptual Models</h2>
+        <div>
+          <p>In summing up my past experience as a designer, I would be remiss if I did not mention the importance of discovering the value and benefits of conceptual modeling. The book I recommend on this topic is <em>Conceptual Models: Core to Good Design</em> by Jeff Johnson and Austin Henderson.</p>
+          <p>In a nutshell, the purpose of creating a conceptual model for an application is to clarify all of the internal relationships of the objects and actions that users encounter as they perform the various tasks necessary to accomplish their goals.</p>
+          <p>When designing multiple applications that are based on the same kinds of actions and objects, a conceptual model also becomes invaluable for maintaining consistency with terminology, and especially the labels that users interact with across those applications.</p>
+        </div>
+        <figure>
+          <a href="#figure-09">
+            <img src="images/misc/conceptual-models.jpg" alt="Conceptual Models book">
+          </a>
+          <figcaption>Conceptual Models book</figcaption>
+        </figure>
+        <div class="overlay" id="figure-09">
+          <a href="#_">
+            <img src="images/misc/conceptual-models.jpg" alt="Conceptual Models book: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section class="hidden">
+        <h2>Allstate Insurance: Call Center Resources App</h2>
+        <div>
+          <p>The Call Center App that Allstate was building sought to provide a unified source for call center representatives to reference in answering questions for policy holders in real time.</p>
+        </div>
+        <figure>
+          <a href="#figure-10">
+            <img src="images/allstate/content-search.gif" alt="Content Search">
+          </a>
+          <figcaption>Allstate: Content Search</figcaption>
+        </figure>
+        <div class="overlay" id="figure-10">
+          <a href="#_">
+            <img src="images/allstate/content-search.gif" alt="Content Search: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>Fidelity Investments: Contribution Calculator</h2>
+        <div>
+          <p>My first project as a user interface designer and developer with Fidelity Investments was the creation of the Contribution Calculator. It was developed as a Java applet, which was a big thing in 1997. However, with Java SDKs being less than a couple of years old, there were not many facilities for building applets with rich UI components.</p>
+          <p>Due to the paucity of the component APIs, I found it necessary to build from scratch the graphing capabilities that were needed for the applet. The original version of the calculator was deployed on the NetBenefits site for over ten years.</p>
+          <p>During my first year at Fidelity, I built two additional financial tools: the Withdrawal Calculator and the Take Home Pay calculator, both as Java applets. I also made some enhancements to the Contribution Calculator in the early 2000s.</p>
+        </div>
+        <figure>
+          <a href="#figure-11">
+            <img src="images/fidelity/contribution-1.gif" alt="Contribution Calculator">
+          </a>
+          <figcaption>Contribution Calculator</figcaption>
+        </figure>
+        <div class="overlay" id="figure-11">
+          <a href="#_">
+            <img src="images/fidelity/contribution-1.gif" alt="Contribution Calculator: fullscreen">
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>Fidelity Investments: NetBenefits Redesign</h2>
+        <div>
+          <p>In the fall of 1998 the retirement services division of Fidelity Investments determined that <a href="https://nb.fidelity.com/public/nb/default/home">NetBenefits</a>, their flagship web application that provides customer access to 401k retirement savings accounts, needed to be updated.</p>
+          <p>At that point in time, NetBenefits had reached the one million customers milestone, and Fidelity, being a market leader in the uses of technology, wanted the application redesigned to make it as easy as possible for its customers to use.</p>
+          <p>Having designed and developed two financial planning tools for Fidelity that had been deployed within NetBenefits in the previous year, I was interviewed by Tom Tullis, VP of User Experience Design, and subsequently asked to lead the user interface redesign of NetBenefits.</p>
+          <p>I worked closely with an astute and savvy business analyst, conducting user research through contextual inquiry and user interviews, and met on a regular basis with business managers in charge of the project.</p>
+          <details>
+            <summary>About the Design</summary>
+            <p>NetBenefits enables retirement account customers to access information and perform transactions within their investment accounts. Examples include:</p>
+            <ul>
+              <li>View the current portfolio value, and its individual mutual fund holdings.</li>
+              <li>View the average returns and current prices of available mutual funds.</li>
+              <li>Specify the contribution amount or percentage of salary to invest in various mutual funds.</li>
+              <li>Choose the allocation mix of mutual funds in which to invest.</li>
+              <li>Perform exchanges, moving assets from one or more mutual funds to one or more other funds.</li>
+            </ul>
+            <!--p>Note that some of these features are purely informational, and others are transactional.</p-->
+            <p>The previous design of NetBenefits utilized a navigation structure organized around an account home page that allowed users to select various sections of the application, but then required them to go back to the home page in order to choose a different section.</p>
+
+            <h3>Question</h3>
+            <p>How to improve the navigation scheme such that it offered what is sometimes referred to as ‘ubiquitous navigation’, i.e., providing common patterns of navigation on as many pages as possible, but still allow users to perform various transactions?</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Provide ubiquitous navigation, but when users chose to perform a transaction, use scripting to restrict which navigational choices they could make.</li>
+              <li>Somehow make the transactional pages different, such that navigational choices were limited.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <ul>
+              <li>A considerable amount of time was spent in researching how users sought to use the available features, and what their main goals were in using the application.</li>
+              <li>This involved task-flow analysis to determine the main task contexts, and also to uncover where the new navigation scheme could interfere with transactional sets of tasks.</li>
+              <li>We found that if transactions were handled differently, such that the navigation options we were adding to information-only pages were removed from transactional pages, we could guide users through a different paradigm of interaction.</li>
+              <li>This alternative paradigm allowed users to either move step-by-step through the transaction or to cancel it at any point and return to the page from which they had entered into the transaction.</li>
+              <li>Through two rounds of usability testing of our new prototypes in Fidelity’s Human Interface Design Lab, we were able to determine that users understood the navigation scheme: they could easily find the features they were looking for, browse through informational pages and perform the various transactions as needed to update their investment choices.</li>
+            </ul>
+          </details>
+          <p>The resulting design, deployed in June 1999, was cited in a <a href="https://www.nytimes.com/2000/09/17/business/a-high-tech-vision-lifts-fidelity.html">New York Times article</a> in Sep. 2000, which stated that “57 percent of the contacts made by retirement-account customers have come online this year, compared with 16 percent in 1998.”</p>
+        </div>
+      </section>
+    </main>
+    <script>
+      function openDetails (evt) {
+        const allDetails = document.querySelectorAll('details');
+        console.log(`length: ${allDetails.length}`);
+        allDetails.forEach(item => item.open = true);
+      }
+      // document.addEventListener('DOMContentLoaded', openDetails);
+    </script>
+  </body>
+</html>

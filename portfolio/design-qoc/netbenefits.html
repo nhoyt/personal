@@ -1,0 +1,30 @@
+<!-- Fidelity NetBenefits Redesign -->
+
+<p>NetBenefits enables retirement account customers to access information and perform transactions within their investment accounts. Examples include:</p>
+<ul>
+  <li>View the current portfolio value, and its individual mutual fund holdings.</li>
+  <li>View the average returns and current prices of available mutual funds.</li>
+  <li>Specify the contribution amount or percentage of salary to invest in various mutual funds.</li>
+  <li>Choose the allocation mix of mutual funds in which to invest.</li>
+  <li>Perform exchanges, moving assets from one or more mutual funds to one or more other funds.</li>
+</ul>
+<!--p>Note that some of these features are purely informational, and others are transactional.</p-->
+<p>The previous design of NetBenefits utilized a navigation structure organized around an account home page that allowed users to select various sections of the application, but then required them to go back to the home page in order to choose a different section.</p>
+
+<h3>Question</h3>
+<p>How to improve the navigation scheme such that it offered what is sometimes referred to as ‘ubiquitous navigation’, i.e., providing common patterns of navigation on as many pages as possible, but still allow users to perform various transactions?</p>
+
+<h3>Options</h3>
+<ul>
+  <li>Provide ubiquitous navigation, but when users chose to perform a transaction, use scripting to restrict which navigational choices they could make.</li>
+  <li>Somehow make the transactional pages different, such that navigational choices were limited.</li>
+</ul>
+
+<h3>Criteria</h3>
+<ul>
+  <li>A considerable amount of time was spent in researching how users sought to use the available features, and what their main goals were in using the application.</li>
+  <li>This involved task-flow analysis to determine the main task contexts, and also to uncover where the new navigation scheme could interfere with transactional sets of tasks.</li>
+  <li>We found that if transactions were handled differently, such that the navigation options we were adding to information-only pages were removed from transactional pages, we could guide users through a different paradigm of interaction.</li>
+  <li>This alternative paradigm allowed users to either move step-by-step through the transaction or to cancel it at any point and return to the page from which they had entered into the transaction.</li>
+  <li>Through two rounds of usability testing of our new prototypes in Fidelity’s Human Interface Design Lab, we were able to determine that users understood the navigation scheme: they could easily find the features they were looking for, browse through informational pages and perform the various transactions as needed to update their investment choices.</li>
+</ul>

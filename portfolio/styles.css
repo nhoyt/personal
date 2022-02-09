@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+@import url('overlay.css');
+
+header, h1, h2, h3, h4, div, p, ul, li, details, summary {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  --almost-black: #090909;
+  --almost-white: #f3f3f3;
+  --border-values: 1px solid #ddd;
+  --default-color: #00132c;
+  --link-color: #1d4b90;
+  --link-highlight: #cad9ef;
+  --radius-default: 5px;
+}
+
+body {
+  color: var(--default-color);
+  background-color: var(--almost-white);
+  font-family: 'STIX Two Math', serif;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  max-width: 57rem;
+}
+
+header {
+  background-color: var(--almost-black);
+  border-radius: var(--radius-default);
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: var(--almost-white);
+  padding: 0.75rem 1rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  grid-column: 1;
+  border-radius: var(--radius-default);
+  color: var(--almost-white);
+  background-color: var(--almost-black);
+  padding: 0.25rem 1rem;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 { font-size: 160%; }
+h2 { font-size: 120%; }
+h3 { font-size: 100%; }
+
+details {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+details[open] {
+  background-color: var(--almost-white);
+}
+
+details > summary {
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+details > summary + h3 {
+  padding 0;
+}
+
+details > p {
+  margin-top: 1rem;
+}
+
+details > h3 + p {
+  margin-top: 0;
+}
+
+div:not(.overlay) a, strong {
+  color: var(--link-color);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 87.5%;
+}
+
+div:not(.overlay) a:hover {
+  color: var(--default-color);
+  background-color: var(--link-highlight);
+  outline: 0.125rem solid var(--link-highlight);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--link-color);
+}
+
+/* Grid layout for section */
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 247px;
+}
+
+section.hidden {
+  display: none;
+}
+
+section > div {
+  grid-column: 1;
+  background-color: white;
+  border-right: var(--border-values);
+  border-left: var(--border-values);
+  padding: 1.5rem 1rem;
+}
+
+section:last-child div {
+  border-bottom: var(--border-values);
+}
+
+section > div > p {
+  margin-top: 1rem;
+}
+
+section > div > p:first-child {
+  margin-top: 0;
+}
+
+section > div ol,
+section > div ul {
+  padding: 0 1.5rem;
+}
+
+section > div > details p + ul {
+  margin-top: 0.75rem;
+}
+
+section > figure {
+  grid-column: 2;
+  margin: 1.5rem 20px 0.5rem;
+  text-align: center;
+  width: 250px;
+}
+
+section > figure img {
+  width: 200px;
+}
+
+section > figure figcaption {
+  font-size: 87.5%;
+  margin-top: 0.25rem;
+}
