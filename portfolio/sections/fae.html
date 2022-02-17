@@ -1,0 +1,40 @@
+<section>
+  <h2>Functional Accessibility Evaluator (FAE)</h2>
+  <div>
+    <p>When I joined what is now called the Accessible IT Group at the University of Illinois in 2005, I worked as lead interaction designer and front-end developer of version 1.0 of the <a href="https://fae.disability.illinois.edu/">Functional Accessibility Evaluator</a>, a web application that uses web crawling to evaluate pages within websites.</p>
+    <p>The original working prototypes were developed using PHP, but after a good deal of research, we transitioned to the Django platform. I designed and developed all of the Django templates that comprise the user interface of the application.</p>
+    <p>I also developed a conceptual model for web accessibility evaluation that was instrumental in creating the terminology and task flows that users could readily understand.</p>
+    <p>FAE was the first tool we developed that was built on top of the Evaluation Library, which encodes a set of accessibility rules that was the result of years of collaboration with accessibility professionals at the University of Illinois and from other universities and industries.</p>
+    <details>
+      <summary>About the Design</summary>
+      <p>When you use FAE to evaluate the accessibility of a website, the evaluation results for each page consist of many data points: over 100 rules divided into 12 categories are applied, and the results for each rule include lists of elements that passed or failed. With this much data, our initial usability testing showed that users were feeling overwhelmed and unsure of how to apply the results in order to improve the accessibility of their websites.</p>
+
+      <h3>Question</h3>
+      <p>How should we organize and present the evaluation results such that they are useful to people who may have various roles regarding their responsibilities for ensuring that websites are accessible?</p>
+
+      <h3>Options</h3>
+      <p>I conducted a user research activity known as a “wants and needs analysis” in which we posed the question: If you could have any kind of accessibility evaluation tool at your disposal, how would you want to use it and what would you hope to be able to do with the results it produces? The analysis produced the following insights:</p>
+      <ul>
+        <li>The tool should help developers understand the accessibility issues they need to address, as well as provide all of the necessary information on “how” to address those issues. In other words, it should answer the questions: what is broken and how do I fix it?</li>
+        <li>While the tool may be very useful for web developers, how does a developer convince her manager that these issues are worth allocating significant resources in order to address them?</li>
+        <li>Could the evaluation results be presented in multiple ways, such that a developer would understand the low-level technical aspects of how to meet particular accessibility requirements, while at the same time, a non-technical person, perhaps a manager responsible for the content and main purpose of a website, could understand overall the degree to which the website succeeds or fails in meeting accessibility requirements?</li>
+      </ul>
+
+      <h3>Criteria</h3>
+      <p>In analyzing the results of the “wants and needs analysis”, we determined that the starting point for any user, technical or non-technical, when presented with the FAE evaluation results, should be a “Summary Report” that provides numerical data showing percentages of rules that passed or failed.</p>
+      <p>The Summary Report should answer the following question in a straightforward manner: “Are we doing well, not so well, or somewhere in between?” with respect to web accessibility requirements?</p>
+      <p>We concluded that if done properly, the Summary Report is what a developer could show a manager in order to give them a general sense of where things stand at present regarding the accessibility of their website to people with disabilities.</p>
+    </details>
+  </div>
+  <figure>
+    <a href="#figure-08">
+      <img src="images/illinois/fae-summary.png" alt="FAE Summary Report: screenshot">
+    </a>
+    <figcaption>FAE Summary Report</figcaption>
+  </figure>
+  <div class="overlay" id="figure-08">
+    <a href="#_">
+      <img src="images/illinois/fae-summary.png" alt="FAE Summary Report: fullscreen">
+    </a>
+  </div>
+</section>
