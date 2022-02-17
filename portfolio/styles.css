@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
 @import url('overlay.css');
@@ -55,13 +55,13 @@ h3 {
   padding: 1rem 0;
 }
 
-h1 { font-size: 160%; }
-h2 { font-size: 120%; }
+h1 { font-size: 170%; }
+h2 { font-size: 115%; }
 h3 { font-size: 100%; }
 
 details {
   margin-top: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 details[open] {
@@ -73,10 +73,7 @@ details > summary {
   font-family: 'Montserrat', sans-serif;
   font-size: 110%;
   font-weight: bold;
-}
-
-details > summary + h3 {
-  padding 0;
+  margin-left: -1rem;
 }
 
 details > p {
@@ -139,6 +136,10 @@ section > div > p:first-child {
 section > div ol,
 section > div ul {
   padding: 0 1.5rem;
+}
+
+section > div > details + p {
+  margin-top: 0.5rem;
 }
 
 section > div > details p + ul {
