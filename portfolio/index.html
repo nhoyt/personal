@@ -12,65 +12,72 @@
     <main>
       <section>
         <div>
-          <p>This portfolio provides descriptions and examples of the user interface and interaction design work I've done on web applications, browser tools and extensions, accessibility bookmarklets and embedded HTML editor plugins over the past 25 years.</p>
-          <p>Some of the examples include an “About the Design” section, which provides Design Space Analysis rationale organized by Questions, Options and Criteria. These highlight some of the most challenging issues faced during the design process for that particular project.</p>
+          <p>This portfolio provides examples and descriptions of the user interface and interaction design work I've done over the past 25 years on web applications and other software tools.</p>
+          <!-- Design Space Analysis rationale: QOC -->
+          <p>Some of the examples include an “About the Design” section, which provides additional information organized by Questions, Options and Criteria. These delve deeper into some of the most challenging design issues faced for a particular project.</p>
         </div>
       </section>
 
-      <!-- SkipTo Landmarks & Headings -->
+      <!-- Fidelity Investments -->
 
       <section>
-        <h2>SkipTo Landmarks &amp; Headings</h2>
+        <h2>Fidelity Investments: Contribution Calculator</h2>
         <div>
-          <p>The main purpose of the SkipTo Landmarks &amp; Headings browser extension is to provide keyboard-only users with a means for easily discovering and navigating to the landmark regions and top-level section headings of a web page, and conversely, for "skipping over" blocks of boilerplate content such as page headers and navigation menus.</p>
-          <p>There are two secondary purposes for the extension: (a) allow anyone interested in structural navigation to view an outline of the page and easily navigate to a desired section, and (b) allow web designers and developers to evaluate the use of landmarks and headings on the page (for example, to check whether headings are properly structured).</p>
-          <details>
-            <summary>About the Design</summary>
-
-            <h3>Question</h3>
-            <p>What keyboard shortcuts should be used to facilitate keyboard navigation?</p>
-
-            <h3>Options</h3>
-            <ul>
-              <li>Use the first character of each menu item as a shortcut key to move to the next item that begins with that character (from WAI-ARIA Authoring Practices).</li>
-              <li>For landmarks: use single-letter mnemonics for shortcuts (for example: press m for main, n for navigation, etc.) and for headings: press a number key 1–6 to move to the next heading of that level.</li>
-            </ul>
-
-            <h3>Criteria</h3>
-            <ul>
-              <li>Typically, each page visited has very different content from other pages. This includes the text content of its headings. For the first characters of the headings to be useful, the user must become familiar with the text content of the headings.</li>
-              <li>Some pages may have many headings (it is not uncommon for large pages to have over 100). The usefulness of first characters as shortcuts in these cases is diminished.</li>
-              <li>Because the menu items are ever-changing from one page to the next (unlike the menus for most software applications), the option for using single-letter mnemonics for landmarks and number keys for headings was chosen.</li>
-            </ul>
-
-            <h3>Question</h3>
-            <p>By default, which landmarks and heading levels should be included in the menu, and in what order should landmarks be displayed? Note: Headings are always displayed in document order.</p>
-
-            <h3>Options</h3>
-            <ul>
-              <li>Show all landmarks and headings.</li>
-              <li>Limit the number of landmarks and headings in the menu to maximize usability.</li>
-            </ul>
-
-            <h3>Criteria</h3>
-            <ul>
-              <li>Based on what this extension is trying to achieve (i.e., serving mainly as an assistive technology), it is felt that only certain landmarks should be displayed and in a particular order.</li>
-              <li>The extension includes ‘main’, ‘search’, ‘navigation’, ‘complementary’ (optional) and ‘contentinfo’ landmarks, in that order. It does not include ‘banner’, ‘form’ or ‘application’ landmarks.</li>
-              <li>For some pages, showing all of the headings can result in many menu items, sometimes numbering in the hundreds. By default, only heading levels 1–3 are shown.</li>
-            </ul>
-          </details>
-          <p>SkipTo Landmarks &amp; Headings was published in June 2021 as both a <a href="https://chrome.google.com/webstore/detail/skipto-landmarks-headings/fjkpbfcodhflpdildjbmdhhmcoplghgf">Chrome extension</a> and a <a href="https://addons.mozilla.org/en-US/firefox/addon/skipto/">Firefox extension</a>.</p>
+          <p>My first project as a user interface designer and developer with Fidelity Investments was the creation of the Contribution Calculator. It was developed as a Java applet, which was a relatively new techology in 1997.</p>
+          <p>With the Java SDKs being less than a couple of years old, there were not many components available for building applets with rich UI features. I therefore found it necessary to build the graphing capabilities that were needed for the applet from scratch.</p>
+          <p>The original version of the Contribution Calculator was deployed on the NetBenefits site for over ten years. While at Fidelity, I also built two additional financial tools: the Withdrawal Calculator and the Take Home Pay calculator, both as Java applets.</p>
         </div>
         <figure>
-          <a href="#figure-01">
-            <img src="images/illinois/skip-to-tpgi.png" alt="Skip To screenshot">
+          <a href="#figure-11">
+            <img src="images/fidelity/contribution-1.gif" alt="Contribution Calculator">
           </a>
-          <figcaption>SkipTo Landmarks &amp; Headings</figcaption>
+          <figcaption>Fidelity: Contribution Calculator</figcaption>
         </figure>
-        <div class="overlay" id="figure-01">
+        <div class="overlay" id="figure-11">
           <a href="#_">
-            <img src="images/illinois/skip-to-tpgi.png" alt="Skip To screenshot: fullscreen">
+            <img src="images/fidelity/contribution-1.gif" alt="Contribution Calculator: fullscreen">
           </a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Fidelity Investments: NetBenefits Redesign</h2>
+        <div>
+          <p>In the fall of 1998 the retirement services division of Fidelity Investments determined that <a href="https://nb.fidelity.com/public/nb/default/home">NetBenefits</a>, their flagship web application that provides customer access to 401k retirement savings accounts, needed to be updated.</p>
+          <p>At that point in time, NetBenefits had reached the one million customers milestone, and Fidelity, being a market leader in the uses of technology, wanted the application redesigned to make it as user-friendly as possible for its customers.</p>
+          <p>Having designed and developed two popular financial planning tools for Fidelity that had been deployed within NetBenefits in the previous year, I was asked to serve as the lead interaction designer in the redesign of NetBenefits.</p>
+          <p>I worked closely with a very knowledgeable business analyst, conducting user research through contextual inquiry and user interviews, and met on a regular basis with business managers in charge of the project.</p>
+          <details>
+            <summary>About the Design</summary>
+            <p>NetBenefits enables retirement account customers to access information and perform transactions within their investment accounts. Examples include:</p>
+            <ul>
+              <li>View the current portfolio value, and its individual mutual fund holdings.</li>
+              <li>View the average returns and current prices of available mutual funds.</li>
+              <li>Specify the contribution amount or percentage of salary to invest in various mutual funds.</li>
+              <li>Choose the allocation mix of mutual funds in which to invest.</li>
+              <li>Perform exchanges, moving assets from one or more mutual funds to one or more other funds.</li>
+            </ul>
+            <p>The previous design of NetBenefits utilized a navigation structure organized around an account home page that allowed users to select various sections of the application, but then required them to go back to the home page in order to choose a different section.</p>
+
+            <h3>Question</h3>
+            <p>How to improve the navigation scheme such that it offered what is sometimes referred to as ‘ubiquitous navigation’, i.e., providing common patterns of navigation on as many pages as possible, but still allow users to perform various transactions?</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Provide ubiquitous navigation, but when users chose to perform a transaction, use scripting to restrict which navigational choices they could make.</li>
+              <li>Somehow make the transactional pages different, such that navigational choices were limited.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <ul>
+              <li>A considerable amount of time was spent in researching how users sought to use the available features, and what their main goals were in using the application.</li>
+              <li>This involved task-flow analysis to determine the main task contexts, and also to uncover where the new navigation scheme could interfere with transactional sets of tasks.</li>
+              <li>We found that if transactions were handled differently, such that the navigation options we were adding to information-only pages were removed from transactional pages, we could guide users through a different paradigm of interaction.</li>
+              <li>This alternative paradigm allowed users to either move step-by-step through the transaction or to cancel it at any point and return to the page from which they had entered into the transaction.</li>
+              <li>Through two rounds of usability testing of our new prototypes in Fidelity’s Human Interface Design Lab, we were able to determine that users understood the navigation scheme: they could easily find the features they were looking for, browse through informational pages and perform the various transactions as needed to update their investment choices.</li>
+            </ul>
+          </details>
+          <p>The resulting design, deployed in June 1999, was cited in a <a href="https://www.nytimes.com/2000/09/17/business/a-high-tech-vision-lifts-fidelity.html">New York Times article</a> in Sep. 2000, which stated that “57 percent of the contacts made by retirement-account customers have come online this year, compared with 16 percent in 1998.”</p>
         </div>
       </section>
 
@@ -98,7 +105,7 @@
           </details>
           <p>The first publicly available version of AInspector was released in Sep. 2014. It was designed and developed using <a href="https://en.wikipedia.org/wiki/XUL">XUL</a> and <a href="https://en.wikipedia.org/wiki/XPCOM">XPCOM</a>, which predated the current WebExtensions APIs.</p>
           <p>After Mozilla stopped supporting XUL-based add-ons in Nov. 2017, the add-on was ported to use the latest WebExtensions APIs and renamed AInspector WCAG.</p>
-          <p>AInspector is currently being updated with additional features, including the ability to export data in CSV format. Version 2.0 is expected to be released in the first half of 2022.</p>
+          <p>AInspector has been updated in 2022 with additional features, including the ability to export data in CSV format. Version 2.0 was released in March.</p>
         </div>
         <figure>
           <a href="#figure-07">
@@ -171,12 +178,69 @@
         </div>
       </section>
 
+      <!-- SkipTo Landmarks & Headings -->
+
+      <section>
+        <h2>SkipTo Landmarks &amp; Headings</h2>
+        <div>
+          <p>The main purpose of the SkipTo Landmarks &amp; Headings browser extension is to provide keyboard-only users with a means for easily discovering and navigating to the landmark regions and top-level section headings of a web page, and conversely, for "skipping over" blocks of boilerplate content such as page headers and navigation menus.</p>
+          <p>There are two secondary purposes for the extension: (a) allow anyone interested in structural navigation to view an outline of the page and easily navigate to a desired section, and (b) allow web designers and developers to evaluate the use of landmarks and headings on the page (for example, to check whether headings are properly structured).</p>
+          <details>
+            <summary>About the Design</summary>
+
+            <h3>Question</h3>
+            <p>What keyboard shortcuts should be used to facilitate keyboard navigation?</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Use the first character of each menu item as a shortcut key to move to the next item that begins with that character (from WAI-ARIA Authoring Practices).</li>
+              <li>For landmarks: use single-letter mnemonics for shortcuts (for example: press m for main, n for navigation, etc.) and for headings: press a number key 1–6 to move to the next heading of that level.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <ul>
+              <li>Typically, each page visited has very different content from other pages. This includes the text content of its headings. For the first characters of the headings to be useful, the user must become familiar with the text content of the headings.</li>
+              <li>Some pages may have many headings (it is not uncommon for large pages to have over 100). The usefulness of first characters as shortcuts in these cases is diminished.</li>
+              <li>Because the menu items are ever-changing from one page to the next (unlike the menus for most software applications), the option for using single-letter mnemonics for landmarks and number keys for headings was chosen.</li>
+            </ul>
+
+            <h3>Question</h3>
+            <p>By default, which landmarks and heading levels should be included in the menu, and in what order should landmarks be displayed? Note: Headings are always displayed in document order.</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Show all landmarks and headings.</li>
+              <li>Limit the number of landmarks and headings in the menu to maximize usability.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <ul>
+              <li>Based on what this extension is trying to achieve (i.e., serving mainly as an assistive technology), it is felt that only certain landmarks should be displayed and in a particular order.</li>
+              <li>The extension includes ‘main’, ‘search’, ‘navigation’, ‘complementary’ (optional) and ‘contentinfo’ landmarks, in that order. It does not include ‘banner’, ‘form’ or ‘application’ landmarks.</li>
+              <li>For some pages, showing all of the headings can result in many menu items, sometimes numbering in the hundreds. By default, only heading levels 1–3 are shown.</li>
+            </ul>
+          </details>
+          <p>SkipTo Landmarks &amp; Headings was published in June 2021 as both a <a href="https://chrome.google.com/webstore/detail/skipto-landmarks-headings/fjkpbfcodhflpdildjbmdhhmcoplghgf">Chrome extension</a> and a <a href="https://addons.mozilla.org/en-US/firefox/addon/skipto/">Firefox extension</a>.</p>
+        </div>
+        <figure>
+          <a href="#figure-01">
+            <img src="images/illinois/skip-to-tpgi.png" alt="Skip To screenshot">
+          </a>
+          <figcaption>SkipTo Landmarks &amp; Headings</figcaption>
+        </figure>
+        <div class="overlay" id="figure-01">
+          <a href="#_">
+            <img src="images/illinois/skip-to-tpgi.png" alt="Skip To screenshot: fullscreen">
+          </a>
+        </div>
+      </section>
+
       <!-- Accessibility Bookmarklets -->
 
       <section>
         <h2>Accessibility Bookmarklets</h2>
         <div>
-          <p>The <a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a> are the end result of what started as a 10 minute demonstration at a monthly campus accessibility meeting. During that meeting, a local web developer showed the group a bookmarklet she had developed that visually outlined the ARIA landmark regions on a web page.</p>
+          <p>The <a href="https://accessibility-bookmarklets.org/">Accessibility Bookmarklets</a> are the end result of what started as a 10 minute demonstration at a monthly campus accessibility meeting. During that meeting, a web developer from a regional consulting firm named Pixo showed the group a bookmarklet she had developed that visually outlined the ARIA landmark regions on a web page.</p>
           <p>It became apparent that additional bookmarklets could be developed that provided interactive visualizations corresponding to other categories of accessibility requirements, such as <em>headings</em>, <em>lists</em>, <em>images</em> and <em>forms</em>.</p>
           <p>Through collaboration over many months, we developed a set of five bookmarklets, which many developers have found useful in getting an initial sense of whether a web page meets certain accessibility requirements.</p>
         </div>
@@ -189,6 +253,29 @@
         <div class="overlay" id="figure-05">
           <a href="#_">
             <img src="images/illinois/bookmarklets.png" alt="Accessibility Bookmarklets: fullscreen">
+          </a>
+        </div>
+      </section>
+
+      <!-- Allstate: Call Center -->
+
+      <section>
+        <h2>Allstate Insurance: Call Center Resources App</h2>
+        <div>
+          <p>The Call Center Resources App for Allstate Insurance involved designing an application that would provide a unified source of information for call center representatives to reference in answering questions for policy holders.</p>
+          <p>This project depended heavily on creating an information architecture that aligned with the mental models that call center reps had regarding the categories of information they needed to access.</p>
+          <p>To learn more about these mental models, I conducted a number of task modeling sessions, in which a group of call center representatives were asked about their day-to-day activities, and the types of information they needed to reference, as well as the best labels for these categories.</p>
+          <p>Through iterative refinement of the labels for various categories of information, where group consensus was sought until there was agreement that each label provided the correct “information scent”, a successful IA was created that significantly increased the efficiency of finding the appropriate information needed for the task at hand.</p>
+        </div>
+        <figure>
+          <a href="#figure-10">
+            <img src="images/allstate/task-model.gif" alt="Task Model">
+          </a>
+          <figcaption>Allstate: Task Model</figcaption>
+        </figure>
+        <div class="overlay" id="figure-10">
+          <a href="#_">
+            <img src="images/allstate/task-model.gif" alt="Task Model: fullscreen">
           </a>
         </div>
       </section>
@@ -232,92 +319,6 @@
           <a href="#_">
             <img src="images/illinois/aitg-website.png" alt="AITG website screenshot: fullscreen">
           </a>
-        </div>
-      </section>
-
-      <!-- Allstate: Call Center -->
-
-      <section>
-        <h2>Allstate Insurance: Call Center Resources App</h2>
-        <div>
-          <p>The Call Center Resources App for Allstate Insurance involved designing an application that would provide a unified source of information for call center representatives to reference in answering questions for policy holders.</p>
-          <p>This project depended heavily on creating an information architecture that aligned with the mental models that call center reps had regarding the categories of information they needed to access.</p>
-          <p>To learn more about these mental models, I conducted a number of task modeling sessions, in which a group of call center representatives were asked about their day-to-day activities, and the types of information they needed to reference, as well as the best labels for these categories.</p>
-          <p>Through iterative refinement of the labels for various categories of information, where group consensus was sought until there was agreement that each label provided the correct “information scent”, a successful IA was created that significantly increased the efficiency of finding the appropriate information needed for the task at hand.</p>
-        </div>
-        <figure>
-          <a href="#figure-10">
-            <img src="images/allstate/task-model.gif" alt="Task Model">
-          </a>
-          <figcaption>Allstate: Task Model</figcaption>
-        </figure>
-        <div class="overlay" id="figure-10">
-          <a href="#_">
-            <img src="images/allstate/task-model.gif" alt="Task Model: fullscreen">
-          </a>
-        </div>
-      </section>
-
-      <!-- Fidelity Investments -->
-
-      <section>
-        <h2>Fidelity Investments: Contribution Calculator</h2>
-        <div>
-          <p>My first project as a user interface designer and developer with Fidelity Investments was the creation of the Contribution Calculator. It was developed as a Java applet, which was a relatively new techology in 1997.</p>
-          <p>With the Java SDKs being less than a couple of years old, there were not many components available for building applets with rich UI features. I therefore found it necessary to build the graphing capabilities that were needed for the applet from scratch.</p>
-          <p>The original version of the Contribution Calculator was deployed on the NetBenefits site for over ten years. While at Fidelity, I also built two additional financial tools: the Withdrawal Calculator and the Take Home Pay calculator, both as Java applets.</p>
-        </div>
-        <figure>
-          <a href="#figure-11">
-            <img src="images/fidelity/contribution-1.gif" alt="Contribution Calculator">
-          </a>
-          <figcaption>Fidelity: Contribution Calculator</figcaption>
-        </figure>
-        <div class="overlay" id="figure-11">
-          <a href="#_">
-            <img src="images/fidelity/contribution-1.gif" alt="Contribution Calculator: fullscreen">
-          </a>
-        </div>
-      </section>
-
-      <section>
-        <h2>Fidelity Investments: NetBenefits Redesign</h2>
-        <div>
-          <p>In the fall of 1998 the retirement services division of Fidelity Investments determined that <a href="https://nb.fidelity.com/public/nb/default/home">NetBenefits</a>, their flagship web application that provides customer access to 401k retirement savings accounts, needed to be updated.</p>
-          <p>At that point in time, NetBenefits had reached the one million customers milestone, and Fidelity, being a market leader in the uses of technology, wanted the application redesigned to make it as user-friendly as possible for its customers.</p>
-          <p>Having designed and developed two popular financial planning tools for Fidelity that had been deployed within NetBenefits in the previous year, I was asked to serve as the lead interaction designer in the redesign of NetBenefits.</p>
-          <p>I worked closely with a very knowledgeable business analyst, conducting user research through contextual inquiry and user interviews, and met on a regular basis with business managers in charge of the project.</p>
-          <details>
-            <summary>About the Design</summary>
-            <p>NetBenefits enables retirement account customers to access information and perform transactions within their investment accounts. Examples include:</p>
-            <ul>
-              <li>View the current portfolio value, and its individual mutual fund holdings.</li>
-              <li>View the average returns and current prices of available mutual funds.</li>
-              <li>Specify the contribution amount or percentage of salary to invest in various mutual funds.</li>
-              <li>Choose the allocation mix of mutual funds in which to invest.</li>
-              <li>Perform exchanges, moving assets from one or more mutual funds to one or more other funds.</li>
-            </ul>
-            <p>The previous design of NetBenefits utilized a navigation structure organized around an account home page that allowed users to select various sections of the application, but then required them to go back to the home page in order to choose a different section.</p>
-
-            <h3>Question</h3>
-            <p>How to improve the navigation scheme such that it offered what is sometimes referred to as ‘ubiquitous navigation’, i.e., providing common patterns of navigation on as many pages as possible, but still allow users to perform various transactions?</p>
-
-            <h3>Options</h3>
-            <ul>
-              <li>Provide ubiquitous navigation, but when users chose to perform a transaction, use scripting to restrict which navigational choices they could make.</li>
-              <li>Somehow make the transactional pages different, such that navigational choices were limited.</li>
-            </ul>
-
-            <h3>Criteria</h3>
-            <ul>
-              <li>A considerable amount of time was spent in researching how users sought to use the available features, and what their main goals were in using the application.</li>
-              <li>This involved task-flow analysis to determine the main task contexts, and also to uncover where the new navigation scheme could interfere with transactional sets of tasks.</li>
-              <li>We found that if transactions were handled differently, such that the navigation options we were adding to information-only pages were removed from transactional pages, we could guide users through a different paradigm of interaction.</li>
-              <li>This alternative paradigm allowed users to either move step-by-step through the transaction or to cancel it at any point and return to the page from which they had entered into the transaction.</li>
-              <li>Through two rounds of usability testing of our new prototypes in Fidelity’s Human Interface Design Lab, we were able to determine that users understood the navigation scheme: they could easily find the features they were looking for, browse through informational pages and perform the various transactions as needed to update their investment choices.</li>
-            </ul>
-          </details>
-          <p>The resulting design, deployed in June 1999, was cited in a <a href="https://www.nytimes.com/2000/09/17/business/a-high-tech-vision-lifts-fidelity.html">New York Times article</a> in Sep. 2000, which stated that “57 percent of the contacts made by retirement-account customers have come online this year, compared with 16 percent in 1998.”</p>
         </div>
       </section>
 
