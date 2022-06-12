@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Case Study: Accessibility Bookmarklets</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+      <simple-menubar>bookmarklets.html</simple-menubar>
+    </header>
+
+    <main>
+      <section>
+        <h2>Overview</h2>
+        <div>
+          <p>The Accessibility Bookmarklets are visualization tools that provide web accessibility testers with an initial view that indicates whether accessibility issues exist on a web page. For example, the Headings bookmarklet makes it readily apparent when heading levels are inappropriately skipped.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Product Definition</h2>
+        <div>
+          <p>The stakeholders, in conjunction with the design team, determined early on that the bookmarklets were not intended to provide detailed web accessibility evaluation data. Rather, they would allow anyone with an interest in web accessibility to become familiar with certains categories of accessibility requirements.</p>
+          <p>These categories would include heading structure, landmark regions, form control labels, list markup for grouping sequences of related items, and image alternative text.</p>
+          <p>They are easy to install and provide an approachable lightweight visual assessment. Because they are written in pure JavaScript, they are compatible with all modern browsers and are typically installed as bookmarks in the browser's 'Favorites' toolbar.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>User Research</h2>
+        <div>
+          <p>Useful for people just learning about web accessibility, as well as seasoned veterans</p>
+          <p>Labels for highlighted regions</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Analysis</h2>
+        <div>
+          <p>Do not require sophisticated knowledge of accessibility requirements</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Design</h2>
+        <div>
+          <p>Overlapping regions, especially with the Landmarks bookmarklet, pointed to incorporating drag-and-drop functionality that would allow users to inspect partially hidden regions.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Validation</h2>
+        <div>
+          <p>User testing to determine whether drag-and-drop functionality was discoverable</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="simple-menubar.js"></script>
+    <script>
+      // Use title content for h1
+      document.getElementsByTagName('h1')[0].textContent = document.getElementsByTagName('title')[0].textContent;
+    </script>
+  </body>
+</html>

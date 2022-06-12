@@ -9,10 +9,10 @@ template.innerHTML = `
 
 const menuMap = new Map([
   [ 'Home', 'index.html' ],
-  [ 'AInspector', 'ainspector.html' ],
-  [ 'A11yFirst', 'a11yfirst.html' ],
+  [ 'AInspector for Firefox', 'ainspector.html' ],
   [ 'Bookmarklets', 'bookmarklets.html' ],
-  [ 'NetBenefits', 'netbenefits.html']
+  [ 'A11yFirst Plugins', 'a11yfirst.html' ],
+  [ 'Fidelity NetBenefits', 'netbenefits.html'],
 ]);
 
 class SimpleMenubar extends HTMLElement {
