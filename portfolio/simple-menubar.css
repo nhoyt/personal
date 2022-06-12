@@ -1,0 +1,56 @@
+/* simple-menubar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+  font-size: 16px;
+  --almost-white: #f3f3f3;
+  --default-text-color: #00132c;
+  --illini-orange: #ff552e;
+  --radius-default: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+nav > div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap:  1.5rem;
+  padding: 0.25rem 1rem 1.125rem;
+}
+
+nav > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--almost-white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: calc(3px + 2px) calc(6px + 2px);
+  border-radius: var(--radius-default);
+  outline: 1px solid var(--almost-white);
+}
+
+nav > div > a:focus,
+nav > div > a:hover,
+nav > div > a[aria-current] {
+  color: var(--default-text-color);
+  background-color: #cad9ef;
+  border-radius: var(--radius-default);
+  outline: 1px solid #cad9ef;
+}
+
+/*
+nav > div > a:focus {
+  outline: none;
+  border: 2px solid var(--illini-orange);
+  padding: 3px 6px;
+}
+*/

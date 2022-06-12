@@ -1,0 +1,57 @@
+      <!-- SkipTo Landmarks & Headings -->
+
+      <section>
+        <h2>SkipTo Landmarks &amp; Headings</h2>
+        <div>
+          <p>The main purpose of the SkipTo Landmarks &amp; Headings browser extension is to provide keyboard-only users with a means for easily discovering and navigating to the landmark regions and top-level section headings of a web page, and conversely, for "skipping over" blocks of boilerplate content such as page headers and navigation menus.</p>
+          <p>There are two secondary purposes for the extension: (a) allow anyone interested in structural navigation to view an outline of the page and easily navigate to a desired section, and (b) allow web designers and developers to evaluate the use of landmarks and headings on the page (for example, to check whether headings are properly structured).</p>
+          <details>
+            <summary>About the Design</summary>
+
+            <h3>Question</h3>
+            <p>What keyboard shortcuts should be used to facilitate keyboard navigation?</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Use the first character of each menu item as a shortcut key to move to the next item that begins with that character (from WAI-ARIA Authoring Practices).</li>
+              <li>For landmarks: use single-letter mnemonics for shortcuts (for example: press m for main, n for navigation, etc.) and for headings: press a number key 1–6 to move to the next heading of that level.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <ul>
+              <li>Typically, each page visited has very different content from other pages. This includes the text content of its headings. For the first characters of the headings to be useful, the user must become familiar with the text content of the headings.</li>
+              <li>Some pages may have many headings (it is not uncommon for large pages to have over 100). The usefulness of first characters as shortcuts in these cases is diminished.</li>
+              <li>Because the menu items are ever-changing from one page to the next (unlike the menus for most software applications), the option for using single-letter mnemonics for landmarks and number keys for headings was chosen.</li>
+            </ul>
+
+            <h3>Question</h3>
+            <p>By default, which landmarks and heading levels should be included in the menu, and in what order should landmarks be displayed? Note: Headings are always displayed in document order.</p>
+
+            <h3>Options</h3>
+            <ul>
+              <li>Show all landmarks and headings.</li>
+              <li>Limit the number of landmarks and headings in the menu to maximize usability.</li>
+            </ul>
+
+            <h3>Criteria</h3>
+            <ul>
+              <li>Based on what this extension is trying to achieve (i.e., serving mainly as an assistive technology), it is felt that only certain landmarks should be displayed and in a particular order.</li>
+              <li>The extension includes ‘main’, ‘search’, ‘navigation’, ‘complementary’ (optional) and ‘contentinfo’ landmarks, in that order. It does not include ‘banner’, ‘form’ or ‘application’ landmarks.</li>
+              <li>For some pages, showing all of the headings can result in many menu items, sometimes numbering in the hundreds. By default, only heading levels 1–3 are shown.</li>
+            </ul>
+          </details>
+          <p>SkipTo Landmarks &amp; Headings was published in June 2021 as both a <a href="https://chrome.google.com/webstore/detail/skipto-landmarks-headings/fjkpbfcodhflpdildjbmdhhmcoplghgf">Chrome extension</a> and a <a href="https://addons.mozilla.org/en-US/firefox/addon/skipto/">Firefox extension</a>.</p>
+        </div>
+        <figure>
+          <a href="#figure-01">
+            <img src="images/illinois/skip-to-tpgi.png" alt="Skip To screenshot">
+          </a>
+          <figcaption>SkipTo Landmarks &amp; Headings</figcaption>
+        </figure>
+        <div class="overlay" id="figure-01">
+          <a href="#_">
+            <img src="images/illinois/skip-to-tpgi.png" alt="Skip To screenshot: fullscreen">
+          </a>
+        </div>
+      </section>
+
