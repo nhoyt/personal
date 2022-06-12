@@ -12,14 +12,12 @@ const menuMap = new Map([
   [ 'AInspector', 'ainspector.html' ],
   [ 'A11yFirst', 'a11yfirst.html' ],
   [ 'Bookmarklets', 'bookmarklets.html' ],
-  // [ 'NetBenefits', 'netbenefits.html']
+  [ 'NetBenefits', 'netbenefits.html']
 ]);
 
 class SimpleMenubar extends HTMLElement {
   constructor () {
     super();
-    // After the following call to attachShadow, the 'shadowRoot'
-    // element is retrievable as 'this.shadowRoot'
     this.attachShadow({ mode: "open" });
 
     // Use external CSS stylesheet
@@ -28,7 +26,7 @@ class SimpleMenubar extends HTMLElement {
     link.setAttribute('href', 'simple-menubar.css');
     this.shadowRoot.appendChild(link);
 
-    // Add DOM tree from template
+    // Add DOM tree from template element
     this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 
@@ -43,7 +41,7 @@ class SimpleMenubar extends HTMLElement {
   connectedCallback () {
     const innerHTML = this.innerHTML.trim();
 
-    // Get div container
+    // Get div container for menu links
     const div = this.shadowRoot.querySelector('nav > div');
 
     // Add menu items to div
