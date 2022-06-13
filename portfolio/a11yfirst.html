@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Case Study: A11yFirst Plugins</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+      <simple-menubar>a11yfirst.html</simple-menubar>
+    </header>
+
+    <main>
+      <section>
+        <h2>Overview</h2>
+        <div>
+          <p>The <a href="https://ckeditor.com/cke4/addons/search/plugins/a11yfirst">A11yFirst Plugins for CKEditor</a></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Project Goals</h2>
+        <div>
+          <p>Proactively guiding authors to incorporate accessibility features in their documents as they edit.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>User Research</h2>
+        <div>
+          <p>Making sense of prompts for information when the author may not fully understand the related accessibility requirements.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Analysis</h2>
+        <div>
+          <p>Do not try to educate the author within the user interface. Simply ask for what is needed.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Design</h2>
+        <div>
+          <p>Labeling, labeling, labeling</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Validation</h2>
+        <div>
+          <p>User testing to determine whether labels conveyed the necessary information</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="simple-menubar.js"></script>
+    <script>
+      // Use title content for h1
+      document.getElementsByTagName('h1')[0].textContent = document.getElementsByTagName('title')[0].textContent;
+    </script>
+  </body>
+</html>
