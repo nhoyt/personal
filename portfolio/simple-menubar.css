@@ -20,7 +20,7 @@ nav > div {
   display: grid;
   grid-template-columns: repeat(5, auto);
   column-gap:  1.5rem;
-  padding: 0.25rem 1rem 1.125rem;
+  padding: 1.5rem 1rem 1rem;
 }
 
 nav > div > a {
