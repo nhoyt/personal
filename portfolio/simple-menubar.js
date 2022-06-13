@@ -9,10 +9,10 @@ template.innerHTML = `
 
 const menuMap = new Map([
   [ 'Home', 'index.html' ],
-  [ 'AInspector for Firefox', 'ainspector.html' ],
+  [ 'AInspector', 'ainspector.html' ],
   [ 'Bookmarklets', 'bookmarklets.html' ],
   [ 'A11yFirst Plugins', 'a11yfirst.html' ],
-  [ 'Fidelity NetBenefits', 'netbenefits.html'],
+  [ 'NetBenefits', 'netbenefits.html'],
   [ 'About', 'about.html' ],
 ]);
 
