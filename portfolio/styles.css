@@ -31,13 +31,13 @@ body {
 
 header {
   background-color: var(--illini-blue);
-  padding-bottom: 0.5rem;
+  /* padding-bottom: 0.5rem; */
 }
 
 header h1 {
   color: var(--almost-white);
   padding: 1rem;
-  border-bottom: .375rem solid var(--default-background);
+  /* border-bottom: .375rem solid var(--default-background); */
 }
 
 h1, h2, h3, h4 {
