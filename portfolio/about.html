@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About: Nicholas Hoyt</title>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+      <simple-menubar>about.html</simple-menubar>
+    </header>
+
+    <main>
+      <section>
+        <h2>Background</h2>
+        <div>
+          <p>Studied jazz composition and arranging at Berklee College of Music; performed in bands for 10 years; continue to study jazz guitar.</p>
+          <p>Design is in my DNA; before studying computer science, I designed the physical packaging of electronic devices for a company that made biotelemetry equipment for biological research.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Other Interests</h2>
+        <div>
+          <p>Psychology, philosophy, literature, foreign cinema</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Favorite Movie</h2>
+        <div>
+          <p><em>8-1/2</em> by Federico Fellini<!--; <em>Stolen Kisses</em> &amp; <em>Bed and Board</em> by François Truffaut--></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Favorite Composers</h2>
+        <div>
+          <p>Béla Bartók, Igor Stravinsky, J.S. Bach, Duke Ellington, and Carla Bley</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Hobbies</h2>
+        <div>
+          <p>Cycling, bird watching, daydreaming</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="simple-menubar.js"></script>
+    <script>
+      // Use title content for h1
+      document.getElementsByTagName('h1')[0].textContent = document.getElementsByTagName('title')[0].textContent;
+    </script>
+  </body>
+</html>
