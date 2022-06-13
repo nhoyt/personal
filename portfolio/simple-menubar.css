@@ -6,7 +6,6 @@ html {
   font-size: 16px;
   --almost-white: #f3f3f3;
   --default-text-color: #00132c;
-  --illini-orange: #ff552e;
   --radius-default: 4px;
 }
 
@@ -42,15 +41,7 @@ nav > div > a:focus,
 nav > div > a:hover,
 nav > div > a[aria-current] {
   color: var(--default-text-color);
-  background-color: #cad9ef;
+  background-color: #e0e8f6;
   border-radius: var(--radius-default);
-  outline: 1px solid #cad9ef;
+  outline: 1px solid #e0e8f6;
 }
-
-/*
-nav > div > a:focus {
-  outline: none;
-  border: 2px solid var(--illini-orange);
-  padding: 3px 6px;
-}
-*/
