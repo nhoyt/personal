@@ -12,11 +12,11 @@ html {
   font-size: 13.5px;
   --almost-white: #f3f3f3;
   --border-values: 1px solid #ddd;
-  --default-background: #e0e8f6;
+  --default-background: #dfdfdf;
   --default-color: #00132c;
   --illini-blue: #13294b;
   --link-color: #1d4b90;
-  --link-highlight: #e0e8f6;
+  --link-highlight: #cad9ef;
   --radius-default: 5px;
 }
 
@@ -31,17 +31,22 @@ body {
 
 header {
   background-color: var(--illini-blue);
-  /* padding-bottom: 0.5rem; */
+  /* remove next line until new layout is used
+  padding-bottom: 0.5rem;
+  */
 }
 
 header h1 {
   color: var(--almost-white);
   padding: 1rem;
-  /* border-bottom: .375rem solid var(--default-background); */
+  /* remove next line until new layout is used
+  border-bottom: .375rem solid var(--default-background);
+  */
 }
 
 h1, h2, h3, h4 {
   font-family: 'Gentium Book Basic', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
@@ -55,8 +60,8 @@ h3 {
   padding: 1rem 0;
 }
 
-h1 { font-size: 200%; }
-h2 { font-size: 150%; }
+h1 { font-size: 180%; }
+h2 { font-size: 140%; }
 h3 { font-size: 120%; }
 
 details {
@@ -116,7 +121,7 @@ section > div {
   background-color: white;
   border-right: var(--border-values);
   border-left: var(--border-values);
-  padding: 1.5rem 1rem;
+  padding: 1rem;
 }
 
 section:last-child div {

@@ -41,7 +41,7 @@ nav > div > a:focus,
 nav > div > a:hover,
 nav > div > a[aria-current] {
   color: var(--default-text-color);
-  background-color: #e0e8f6;
+  background-color: #cad9ef;
   border-radius: var(--radius-default);
-  outline: 1px solid #e0e8f6;
+  outline: 1px solid #cad9ef;
 }
