@@ -13,6 +13,7 @@ const menuMap = new Map([
   [ 'Bookmarklets', 'bookmarklets.html' ],
   [ 'A11yFirst Plugins', 'a11yfirst.html' ],
   [ 'Fidelity NetBenefits', 'netbenefits.html'],
+  [ 'About', 'about.html' ],
 ]);
 
 class SimpleMenubar extends HTMLElement {
