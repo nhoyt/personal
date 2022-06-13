@@ -1,47 +1,48 @@
 /* simple-menubar.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-html {
-  font-size: 16px;
+div {
   --almost-white: #f3f3f3;
   --default-text-color: #00132c;
+  --illini-blue: #13294b;
+  --light-blue: #cad9ef;
+  --illini-orange: #ff552e;
   --radius-default: 4px;
-}
-
-nav {
-  display: flex;
-  justify-content: start;
-  align-items: center;
 }
 
 nav > div {
   display: grid;
-  grid-template-columns: repeat(6, auto);
-  column-gap:  1.5rem;
-  padding: 1.25rem 1rem .75rem;
+  column-gap: 1rem;
+  grid-template-columns: repeat(6, 1fr);
+  padding: .75rem 0;
 }
 
 nav > div > a {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  background-color: var(--illini-blue);
   color: var(--almost-white);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none;
   white-space: nowrap;
-  padding: calc(3px + 2px) calc(6px + 2px);
+
   border-radius: var(--radius-default);
-  outline: 1px solid var(--almost-white);
+  padding: calc(3px + 2px) calc(6px + 2px);
 }
 
-nav > div > a:focus,
 nav > div > a:hover,
 nav > div > a[aria-current] {
+  background-color: var(--light-blue);
   color: var(--default-text-color);
-  background-color: #cad9ef;
-  border-radius: var(--radius-default);
-  outline: 1px solid #cad9ef;
+  outline: 1px solid var(--illini-blue);
+  outline-offset: -1px;
+}
+
+nav > div > a:focus {
+  background-color: var(--light-blue);
+  color: var(--default-text-color);
+  outline: 2px solid var(--illini-orange);
+  outline-offset: -1px;
 }

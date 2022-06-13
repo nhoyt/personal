@@ -1,0 +1,32 @@
+section > div > details {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+section > div > details[open] {
+  background-color: var(--almost-white);
+}
+
+section > div > details > summary {
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+  font-weight: bold;
+  margin-left: -1rem;
+}
+
+section > div > details > p {
+  margin-top: 1rem;
+}
+
+section > div > details > h3 + p {
+  margin-top: 0;
+}
+
+section > div > details + p {
+  margin-top: 0.5rem;
+}
+
+section > div > details p + ul {
+  margin-top: 0.75rem;
+}
