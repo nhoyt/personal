@@ -44,6 +44,8 @@ class SimpleMenubar extends HTMLElement {
 
     // Get div container for menu links
     const div = this.shadowRoot.querySelector('nav > div');
+    div.style.setProperty('grid-template-columns',
+      `repeat(${menuMap.size}, 1fr)`);
 
     // Add menu items to div
     for (const [key, value] of menuMap) {
