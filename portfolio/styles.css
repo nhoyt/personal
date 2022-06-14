@@ -11,9 +11,10 @@ header, h1, h2, h3, h4, div, p, ul, li, details, summary {
 
 html {
   font-size: 13.5px;
+  line-height: 1.375;
   --almost-white: #f3f3f3;
   --border-values: 1px solid #ddd;
-  --default-background: #dfdfdf;
+  --default-background: #e9e9e9;
   --default-color: #00132c;
   --illini-blue: #13294b;
   --link-color: #1d4b90;
@@ -58,7 +59,7 @@ h3 {
 
 h1 { font-size: 190%; } /* 180 */
 h2 { font-size: 130%; } /* 140 */
-h3 { font-size: 115%; } /* 120 */
+h3 { font-size: 120%; } /* 120 */
 
 div:not(.overlay) a, strong {
   color: var(--link-color);
@@ -84,19 +85,31 @@ section {
 }
 
 section > div {
-  grid-column: 1;
   background-color: white;
-  border-right: var(--border-values);
-  border-left: var(--border-values);
+  border: var(--border-values);
+  border-top: none;
   padding: 1rem;
 }
 
-section:last-child div {
+section > h2, section > div {
+  grid-column: 1 / span 2;
+}
+
+section.figure > h2, section.figure > div {
+  grid-column: 1;
+}
+
+section > div:last-child {
   border-bottom: var(--border-values);
+  padding-bottom: 1.25rem;
 }
 
 section > div > p {
   margin-top: 1rem;
+}
+
+section > div > h3 + p {
+  margin-top: 0;
 }
 
 section > div > p:first-child {
