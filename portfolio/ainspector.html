@@ -15,17 +15,21 @@
       <section>
         <h2>Overview</h2>
         <div>
-          <p><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/">AInspector</a></p>
-          <p>Similarities with FAE; uses same Evaluation Library</p>
-          <p>The first publicly available version of AInspector was released in Sep. 2014. It was designed and developed using <a href="https://en.wikipedia.org/wiki/XUL">XUL</a> and <a href="https://en.wikipedia.org/wiki/XPCOM">XPCOM</a>, which predated the current WebExtensions APIs.</p>
-          <p>After Mozilla stopped supporting XUL-based add-ons in Nov. 2017, the add-on was ported to use the latest WebExtensions APIs.</p>
-          <p>AInspector has been updated in 2022 with additional features, including the ability to export data in CSV format. Version 2.0 was released in March.</p>
+          <p><a href='https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/'>AInspector</a>, a Firefox browser extension, is the primary accessibility evaluation tool used by web developers, designers, and quality assurance testers at the University of Illinois.</p>
+          <p>It was first released in September 2014 and about three years later was updated to use the WebExtensions API that was subsequently required by Mozilla. In March 2022, version 2.0 of AInspector was released with significant enhancements, including the ability to export evaluation results in CSV format.</p>
+          <h3>My Role</h3>
+          <p>I was the user interface and interaction designer of the first version of AInspector, working in conjunction with the product manager who is also a developer and accessibility expert. I acted in an advisory capacity for more recent design improvements to AInspector, such as those in version 2.0.</p>
         </div>
       </section>
 
       <section>
         <h2>Product Definition</h2>
         <div>
+          <p>The initial version of AInspector had ambitious goals that were tied to another product, a web application that we had developed a   few years earlier named the Functional Accessibility Evaluator (FAE), which uses web spidering to evaluate entire websites.</p>
+          <p>Much work had gone into FAE (I was the user interface and interaction designer for that product), to the point that we already had developed an information architecture used in structuring the very large dataset of accessibility evaluation results.</p>
+          <p>AInspector was conceived to be the single-page version of FAE. Because FAE was layered on top of the OpenA11y Evaluation Library, we knew that it would be advantageous if AInspector could also utilize the same library.</p>
+          <p>However, we also realized that having two separate products that reported or displayed evaluation results in the same format presented a challenge relating to their user interfaces. The labeling of evaluation results in FAE was built into the reporting interface.</p>
+
           <p>AInspector uses the same Evaluation Library as the Functional Accessibility Evaluator, and thus its evaluation results are presented in the same format, using the same terminology and ruleset as FAE.</p>
           <h3>Question</h3>
           <p>How to align all of the terminology and labeling of features present in AInspector with those in FAE and keep them in sync?</p>
@@ -39,10 +43,6 @@
           <h3>Criteria</h3>
           <p>Based on a 2002 paper, <a href="https://www.researchgate.net/publication/220382707_Conceptual_models_begin_by_designing_what_to_design"><i> Conceptual models: begin by designing what to design (PDF)</i></a> by Jeff Johnson and Austin Henderson, I created the <a href="https://github.com/ainspector/design/wiki/Conceptual-Model-for-Web-Accessibility-Evaluation">Conceptual Model for Web Accessibility Evaluation</a>. I was the author and editor of the conceptual model, but its content is based on extensive input from our multi-organization group whose membership included a number of web accessibility experts.</p>
           <p>This conceptual model served as the basis for all terminology, and the organization of evaluation results in all AInspector screens and FAE reports.</p>
-
-          <p>The first publicly available version of AInspector was released in Sep. 2014. It was designed and developed using <a href="https://en.wikipedia.org/wiki/XUL">XUL</a> and <a href="https://en.wikipedia.org/wiki/XPCOM">XPCOM</a>, which predated the current WebExtensions APIs.</p>
-          <p>After Mozilla stopped supporting XUL-based add-ons in Nov. 2017, the add-on was ported to use the latest WebExtensions APIs.</p>
-          <p>AInspector has been updated in 2022 with additional features, including the ability to export data in CSV format. Version 2.0 was released in March.</p>
 
           <p>Conceptual model for web accessibility evaluation</p>
         </div>
