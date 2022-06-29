@@ -48,7 +48,7 @@ class SimpleMenubar extends HTMLElement {
   }
 }
 
-/* shadow root content: template and style elements */
+/* TEMPLATE AND STYLE ELEMENTS */
 
 const template = document.createElement('template');
 template.innerHTML = `
@@ -63,11 +63,6 @@ style.innerHTML = `
     margin: 0;
     padding: 0;
   }
-  nav {
-    --default-text-color: #00132c;
-    --illini-orange: #ff552e;
-    --light-blue: #cad9ef;
-  }
   nav ul {
     list-style: none;
     margin: 1.125rem 0;
@@ -77,7 +72,7 @@ style.innerHTML = `
     margin: 0 1rem;
   }
   nav ul li a {
-    color: var(--default-text-color);
+    color: var(--link-color);
     text-decoration: none;
     padding: 0.25rem 0;
     border-bottom: 2px solid transparent;

@@ -9,7 +9,7 @@ header, h1, h2, h3, h4, div, p, ul, li, details, summary {
   padding: 0;
 }
 
-html {
+:root {
   font-size: 13.5px;
   line-height: 1.375;
   --almost-white: #f3f3f3;
@@ -17,8 +17,9 @@ html {
   --default-background: #e9e9e9;
   --default-color: #00132c;
   --illini-blue: #13294b;
+  --illini-orange: #ff552e;
+  --light-blue: #cad9ef;
   --link-color: #1d4b90;
-  --link-highlight: #cad9ef;
   --radius-default: 4px;
 }
 
@@ -67,8 +68,8 @@ div:not(.overlay) a, strong {
 
 div:not(.overlay) a:hover {
   color: var(--default-color);
-  background-color: var(--link-highlight);
-  outline: 0.125rem solid var(--link-highlight);
+  background-color: var(--light-blue);
+  outline: 0.125rem solid var(--light-blue);
   text-decoration: none;
 }
 
