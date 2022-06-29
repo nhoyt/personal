@@ -15,6 +15,8 @@ class SimpleMenubar extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(style);
     this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+    // Save reference to menu container
     this.container = this.shadowRoot.querySelector('nav > ul');
   }
 
@@ -29,11 +31,8 @@ class SimpleMenubar extends HTMLElement {
   }
 
   connectedCallback () {
-    // Get current page URL (expected text content)
+    // Get current page URL
     const pageUrl = this.textContent.trim();
-
-    // Get container for menu items
-    // const container = this.shadowRoot.querySelector('nav > ul');
 
     // Add menu items to container
     for (const [key, value] of menuMap) {
