@@ -78,6 +78,7 @@ style.innerHTML = `
     border-bottom: 2px solid transparent;
   }
   nav ul li a:hover {
+    color: var(--default-color);
     background-color: var(--light-blue);
     border-bottom: 2px solid var(--illini-orange);
   }
