@@ -1,15 +1,8 @@
 /* simple-menubar.js */
 
-const template = document.createElement('template');
-template.innerHTML = `
-  <nav>
-    <div></div>
-  </nav>
-`;
-
 const menuMap = new Map([
   [ 'Home', 'index.html' ],
-  [ 'AInspector', 'ainspector.html' ],
+  [ 'AInspector for Firefox', 'ainspector.html' ],
   [ 'Bookmarklets', 'bookmarklets.html' ],
   [ 'A11yFirst Plugins', 'a11yfirst.html' ],
   [ 'NetBenefits', 'netbenefits.html'],
@@ -20,42 +13,94 @@ class SimpleMenubar extends HTMLElement {
   constructor () {
     super();
     this.attachShadow({ mode: "open" });
-
-    // Use external CSS stylesheet
-    const link = document.createElement('link');
-    link.setAttribute('rel', 'stylesheet');
-    link.setAttribute('href', 'simple-menubar.css');
-    this.shadowRoot.appendChild(link);
-
-    // Add DOM tree from template element
+    this.shadowRoot.appendChild(style);
     this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.container = this.shadowRoot.querySelector('nav > ul');
   }
 
-  createAnchor (text, href) {
-    const anchor = document.createElement('a');
+  createMenuLink (text, href) {
+    const link = document.createElement('a');
+    link.href = href;
+
     const textNode = document.createTextNode(text);
-    anchor.appendChild(textNode);
-    anchor.href = href;
-    return anchor;
+    link.appendChild(textNode);
+
+    return link;
+  }
+
+  insertMenuLabel () {
+    const items = this.shadowRoot.querySelectorAll('li');
+    const label = document.createElement('li');
+    label.appendChild(document.createTextNode('Case Studies: '));
+    label.style.setProperty('margin-right', 0);
+    label.style.setProperty('margin-left', '2rem');
+    label.style.setProperty('font-weight', 600);
+    this.container.insertBefore(label, items[1]);
   }
 
   connectedCallback () {
-    const innerHTML = this.innerHTML.trim();
+    // Get current page URL (expected text content)
+    const pageUrl = this.textContent.trim();
 
-    // Get div container for menu links
-    const div = this.shadowRoot.querySelector('nav > div');
-    div.style.setProperty('grid-template-columns',
-      `repeat(${menuMap.size}, 1fr)`);
+    // Get container for menu items
+    // const container = this.shadowRoot.querySelector('nav > ul');
 
-    // Add menu items to div
+    // Add menu items to container
     for (const [key, value] of menuMap) {
-      let anchor = this.createAnchor(key, value);
-      if (innerHTML === value) {
-        anchor.setAttribute('aria-current', 'page');
+      let link = this.createMenuLink(key, value);
+      if (pageUrl === value) {
+        link.setAttribute('aria-current', 'page');
       }
-      div.appendChild(anchor);
+      const item = document.createElement('li');
+      item.appendChild(link);
+      this.container.appendChild(item);
     }
+
+    // this.insertMenuLabel();
   }
 }
+
+/* shadow root content: template and style elements */
+
+const template = document.createElement('template');
+template.innerHTML = `
+  <nav>
+    <ul></ul>
+  </nav>
+`;
+
+const style = document.createElement('style');
+style.innerHTML = `
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    --default-text-color: #00132c;
+    --illini-orange: #ff552e;
+    --light-blue: #cad9ef;
+  }
+  nav ul {
+    list-style: none;
+    margin: 1.125rem 0;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  nav ul li a {
+    color: var(--default-text-color);
+    text-decoration: none;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+  }
+  nav ul li a:hover {
+    background-color: var(--light-blue);
+    border-bottom: 2px solid var(--illini-orange);
+  }
+  nav ul li a[aria-current] {
+    border-bottom: 2px solid var(--illini-orange);
+  }
+`;
 
 customElements.define('simple-menubar', SimpleMenubar);
