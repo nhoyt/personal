@@ -28,16 +28,6 @@ class SimpleMenubar extends HTMLElement {
     return link;
   }
 
-  insertMenuLabel () {
-    const items = this.shadowRoot.querySelectorAll('li');
-    const label = document.createElement('li');
-    label.appendChild(document.createTextNode('Case Studies: '));
-    label.style.setProperty('margin-right', 0);
-    label.style.setProperty('margin-left', '2rem');
-    label.style.setProperty('font-weight', 600);
-    this.container.insertBefore(label, items[1]);
-  }
-
   connectedCallback () {
     // Get current page URL (expected text content)
     const pageUrl = this.textContent.trim();
@@ -55,8 +45,6 @@ class SimpleMenubar extends HTMLElement {
       item.appendChild(link);
       this.container.appendChild(item);
     }
-
-    // this.insertMenuLabel();
   }
 }
 
