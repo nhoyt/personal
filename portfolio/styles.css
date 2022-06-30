@@ -88,7 +88,6 @@ section {
 section > div {
   background-color: white;
   border: var(--border-values);
-  border-top: none;
   padding: 1rem;
 }
 
@@ -98,6 +97,10 @@ section > h2, section > div {
 
 section.figure > h2, section.figure > div {
   grid-column: 1;
+}
+
+section > h2 + div {
+  border-top: none;
 }
 
 section > div:last-child {
