@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SRC="$HOME/Documents/Office/Resume"
+SRC="$HOME/Archive/Office/Resume"
 DEST="./resume"
 
 # cp "$SRC/FED.pdf" "$DEST/nhoyt-fed.pdf"
