@@ -1,0 +1,113 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+html {
+  --border-grey: #eee;
+  --dark-blue:   #1d58a7;
+  --light-grey:  #f3f3f3;
+  --hspacing: 1.25rem;
+  --vspacing: 1.25rem;
+}
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+a, abbr, address, cite, code,
+em, img, strong, sub, sup, b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+nav, section, summary, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  width: 87.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    border-left: 2px solid var(--border-grey);
+    max-width: 640px;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    border-left: 2px solid var(--border-grey);
+    max-width: 800px;
+    width: 60%;
+  }
+}
+
+header, main {
+  width: 100%;
+}
+
+main {
+  margin-top: var(--vspacing);
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 165%;
+  margin-top: calc(var(--vspacing) / 2);
+}
+
+h2 {
+  font-size: 135%;
+  margin-top: var(--vspacing);
+}
+
+h3 {
+  font-size: 110%;
+  margin-top: var(--vspacing);
+}
+
+p {
+  margin-top: var(--vspacing);
+  margin-left: var(--hspacing);
+}
+
+/* highlighting */
+
+kbd, span.kbd {
+  color: var(--dark-blue);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+span.file, span.menu, span.path {
+  color: var(--dark-blue);
+  font-family: 'Roboto', sans-serif;
+}

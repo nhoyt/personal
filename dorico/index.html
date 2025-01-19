@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dorico: Overview</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="section.css">
+  </head>
+  <body class="hidden">
+    <header>
+      <h1>Dorico Quick Reference</h1>
+      <nav-menu current="index.html"></nav-menu>
+    </header>
+
+    <main>
+      <h1>Overview</h1>
+
+      <section>
+        <h2>Three main objects</h2>
+
+        <p>When creating a score, you will specify or create the following
+          types of objects in Dorico:</p>
+        <dl class="wide">
+          <dt>Players:</dt>
+          <dd>Solo instruments or sections</dd>
+
+          <dt>Flows:</dt>
+          <dd>Independent pieces of music that players are assigned to play</dd>
+
+          <dt>Layouts:</dt>
+          <dd>Formatting specifications for the score and parts</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Five major modes</h2>
+
+        <p>The major modes in Dorico are like five separate programs, each with
+          its own distinct set of features and user interface.</p>
+
+        <h3>Setup mode</h3>
+        <ul>
+          <li>Set up instruments, players, flows and layouts</li>
+          <li>Assign instruments to players</li>
+          <li>Assign players to layouts</li>
+        </ul>
+
+        <h3>Write mode</h3>
+        <ul>
+          <li>Input and edit music</li>
+          <li>Change rhythmic position of items</li>
+          <li>Change the pitch of notes</li>
+          <li>Delete notes and other items</li>
+        </ul>
+        <p>Because of the way Dorico handles note input in relation to the
+          rhythmic grid, it is generally best to specify a time signature
+          before you begin inputting notes.</p>
+
+        <h3>Engrave mode</h3>
+        <ul>
+          <li>Make fine adjustments to notes and other items</li>
+          <li>Determine how the pages of your project are laid out</li>
+        </ul>
+
+        <h3>Play mode</h3>
+        <ul>
+          <li>Change the playback template and assign VST instruments</li>
+          <li>Input automation</li>
+          <li>Adjust the mix</li>
+          <li>Change the sounding duration of notes</li>
+        </ul>
+
+        <h3>Print mode</h3>
+        <p>Print layouts or export them as graphics files or PDFs.</p>
+      </section>
+
+      <section>
+        <h2>Important concepts</h2>
+
+        <h3>Note durations and implicit rests</h3>
+        <ul>
+          <li>The notation and division of notes and rests is determined by a
+            set of rules and conventions that you have little to no control
+            over.</li>
+          <li>This means that note and rest durations can change and appear
+            differently later, compared to when you first input them.</li>
+          <li>Notes are treated as a single unit, even if they appear as a tie
+            chain that contains multiple notes tied together.</li>
+          <li>Implicit rests automatically fill the gaps between the notes you
+            input.</li>
+          <li>In combination with time signatures, this allows you to input
+            only the notes you want with the duration required. It is not
+            necessary to input rests between notes or input ties for notes
+          that cross the half-bar, for example.</li>
+        </ul>
+
+        <h3>Rhythmic position</h3>
+        <ul>
+          <li>Notes and items exist at rhythmic positions, which are calculated
+            using their place in musical time in the flow rather than their
+            position in a specific bar that has a particular time signature.</li>
+          <li>Because notes and items exist independently of bars and time
+            signatures, you can change the time signature without changing when
+            notes happen in relation to each other or adding rests at the end
+            of each bar.</li>
+          <li>Instead, the barlines simply move to different positions and the
+            grouping of notes is updated as required, such as notating a quarter
+            note as two tied eighth notes if it now straddles a barline or
+            crosses the half-bar.</li>
+        </ul>
+
+        <h3>Using popovers</h3>
+        <ul>
+          <li>Popovers are triggered by certain key commands and allow you to
+            perform various tasks using shorthand syntax while remaining in
+            note input mode.</li>
+          <li>These include adding different types of notations to your score
+            such as key signatures and dynamics, or transposing a selection of
+            notes.</li>
+          <li>For example, once you reach the position where you want to input
+            a new key signature, you can open the corresponding popover using
+            its key command <span class="kbd">Shift K</span>, input the key
+            signature you want, and then continue inputting notes.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Creating projects</h2>
+
+        <p>Projects specify players and instrumentation, and contain one or
+          more flows. Each flow may have various layouts for different versions
+          of the score and its parts.</p>
+
+        <h3>New project from template</h3>
+        <ul>
+          <li>From the Dorico menu, select <span class="menu">File > New From
+            Template ></span> [select template], or</li>
+          <li>From the <span class="menu">Steinberg Hub</span>, select a
+            template category, then a template, and then click
+            <span class="menu">New from Template</span></li>
+        </ul>
+        <p>This places you directly in <span class="menu">Write Mode</span>.</p>
+
+        <h3>New empty project</h3>
+        <ul>
+          <li>Select <span class="menu">File > New</span> or press
+            <span class="kbd">Cmd-N</span>, or</li>
+          <li>From the <span class="menu">Steinberg Hub</span>, select
+            <span class="menu">New Empty Project</span></li>
+        </ul>
+        <p>This places you in <span class="menu">Setup Mode</span>.</p>
+      </section>
+    </main>
+    <script src="dorico.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dorico: Preferences</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="section.css">
+  </head>
+  <body class="hidden">
+    <header>
+      <h1>Dorico Quick Reference</h1>
+      <nav-menu current="preferences.html"></nav-menu>
+    </header>
+    <main>
+      <h1>Preferences</h1>
+      <p>This quick reference is based on the following settings chosen in
+      <span class="menu">Dorico > Preferences</span>.</p>
+
+      <p>Note: If you add or modify any key commands in Dorico and need to remember
+      which ones, refer to the <span class="file">keycommands.json</span> file in the
+      <span class="path">Application Support/Steinberg/Dorico 5</span> folder.</p>
+
+      <p>Also, it is useful to note that the <span class="menu">Help > Key Commands</span>
+      menu item in the Dorico main menu displays all key command settings, including
+      your own customizations.</p>
+
+      <section>
+        <h2>Note Input and Editing</h2>
+
+        <h3>Pitch and Duration</h3>
+        <ul>
+          <li>For the setting: <span class="menu">By default, specify pitch:</span> choose
+          <span class="menu">After Duration</span>.</li>
+          <li>For the setting <span class="menu">Specify accidental, rhythm dot and
+          articulations:</span> choose <span class="menu">After inputting note</span>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Key Commands</h2>
+
+        <h3><span class="menu">Note Input > Set Note Duration</h3>
+        <p>The following override the Dorico defaults for setting note duration.</p>
+
+        <dl class="narrow">
+          <dt>Double whole note</dt><dd><span class="kbd">8</span></dd>
+          <dt>Whole note</dt><dd><span class="kbd">7</span></dd>
+          <dt>1/2 note</dt><dd><span class="kbd">6</span></dd>
+          <dt>1/4 note</dt><dd><span class="kbd">5</span></dd>
+          <dt>1/8 note</dt><dd><span class="kbd">4</span></dd>
+          <dt>1/16 note</dt><dd><span class="kbd">3</span></dd>
+          <dt>1/32 note</dt><dd><span class="kbd">2</span></dd>
+          <dt>1/64 note</dt><dd><span class="kbd">1</span></dd>
+        </dl>
+
+        <p>The above settings are duplicated in Write Mode - Part 1 / 'Inputting notes'.</p>
+
+        <h3><span class="menu">Note Input > Dotted Notes</span></h3>
+        <p>The default key command for adding a dot to a note, increasing its duration
+        by half, is <span class="kbd">'.'</span> — the period character.<p>
+        <p>To me, it makes sense to add <span class="kbd">Num'.'</span> — the numeric
+        keypad dot character. However, this overrides the global command 'Move Playhead
+        to Start of Flow'. Consequently, I override the following key command.</p>
+
+        <h3><span class="menu">Note Input > Set Accidental</span></h3>
+        <p>Added the following, in addition to their default values:</p>
+        <dl class="narrow">
+          <dt><span class="menu">Natural</span></dt><dd><span class="kbd">Num'0'</span></dd>
+          <dt><span class="menu">Flat</span></dt><dd><span class="kbd">Num'-'</span></dd>
+          <dt><span class="menu">Sharp</span></dt><dd><span class="kbd">Num'='</span></dd>
+        </dl>
+
+        <h3><span class="menu">Play > Move Playhead to > Start of Flow</span></h3>
+        <p>On a trial basis, I have overridden <span class="kbd">Num'0'</span> in the global
+        context to execute the command 'Move Playhead to Start of Flow' instead of its default
+        'Stop Playback'.</p>
+      </section>
+    </main>
+    <script src="dorico.js" type="module"></script>
+  </body>
+</html>

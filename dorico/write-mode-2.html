@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dorico: Write Mode – Part 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="section.css">
+  </head>
+  <body class="hidden">
+    <header>
+      <h1>Dorico Quick Reference</h1>
+      <nav-menu current="write-mode-2.html"></nav-menu>
+    </header>
+
+    <main>
+      <h1>Write Mode – Part 2</h1>
+
+      <section>
+        <h2>Modify pitch or rhythmic position</h2>
+
+        <h3>Raise or lower pitch stepwise</h3>
+        <ul>
+          <li>Press <span class="kbd">Option-Up-Arrow</span> or
+            <span class="kbd">Option-Down-Arrow</span></li>
+        </ul>
+        <p>The pitch is raised or lowered to the next scale tone, defined by
+          the key signature, and respecting any prior accidentals in the bar
+          within the same octave.</p>
+
+        <h3>Raise or lower pitch by an octave</h3>
+        <ul>
+          <li>Press <span class="kbd">Cmd-Option-Up-Arrow</span> or
+            <span class="kbd">Cmd-Option-Down-Arrow</span></li>
+        </ul>
+
+        <h3>Change rhythmic position</h3>
+        <p>To move the selected note(s) left or right by the increment defined
+          in the current rhythmic grid:</p>
+        <ul>
+          <li>Press <span class="kbd">Option-Left-Arrow</span> or
+            <span class="kbd">Option-Right-Arrow</span>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Modify duration of notes or rests</h2>
+
+        <h3>Normal input mode vs. insert mode</h3>
+        <p>There are important differences in the behavior of changing
+          note/rest durations depending on whether you are in insert mode or
+          not.</p>
+        <ul>
+          <li>When in normal note input mode, lengthening the duration of a
+            note or rest can potentially erase (subsume) one or more notes or
+            rests that follow.</li>
+          <li>When in insert mode, changing the duration of a note or rest does
+            not affect notes or rests that follow.</li>
+        </ul>
+
+        <h3>Change the duration of a selected note or rest</h3>
+        <ul>
+          <li>Press the key command of the duration you want, or</li>
+          <li>select a different note value in the Notes panel.</li>
+        </ul>
+
+        <p>To shorten or lengthen the duration of a selected note or rest by
+          the increment defined in the current rhythmic grid:</p>
+        <ul>
+          <li>Press <span class="kbd">Option-Shift-Left-Arrow</span> or
+          <span class="kbd">Option-Shift-Right-Arrow</span>.</li>
+        </ul>
+
+        <h3>Double the duration length</h3>
+        <ul>
+          <li>Press <span class="kbd">Cmd-Option-Shift-Right-Arrow</span>.</li>
+        </ul>
+
+        <h3>Halve the duration length</h3>
+        <ul>
+          <li>Press <span class="kbd">Cmd-Option-Shift-Left-Arrow</span>.</li>
+        </ul>
+
+        <h3>Force duration</h3>
+        <p>To force the exact note durations you input (instead of allowing
+          Dorico to convert, for example, a quarter note on beat two tied to a
+          half note to a dotted half note), select ‘Force Duration’ (the clamp
+          icon) or press <span class="kbd">O</span> to toggle it on, if
+          necessary.</p>
+      </section>
+
+      <section>
+        <h2>Add/delete bars, slurs &amp; ties</h2>
+
+        <h3>Add/delete bars</h3>
+        <ul>
+          <li>Select the barline after which you want to add or delete
+            bars.</li>
+          <li>Press <span class="kbd">Shift-B</span> → popover: +1, -3</li>
+        </ul>
+
+        <h3>Add pickup bar</h3>
+        <p>To create a pickup bar at the beginning of a flow:</p>
+        <ul>
+          <li>Input the pickup note(s) plus at least one additional note
+            or rest at the beginning of the flow.</li>
+          <li>Select the note or rest immediately following the pickup
+            note(s).</li>
+          <li>Insert a barline before it by pressing <span class="kbd">Shift-B
+          </span>and entering <span class="kbd">|</span> (the ‘vertical bar’
+          character) in the popover.</li>
+        </ul>
+
+        <h3>Slurs</h3>
+        <ul>
+          <li>Select the notes to which the slur applies.</li>
+          <li>Press <span class="kbd">S</span> or select ‘Slur’ in the notes
+            panel.</li>
+        </ul>
+
+        <h3>Tie notes</h3>
+        <ul>
+          <li>Select the note on which you want the tie to start.</li>
+          <li>Press <span class="kbd">T</span> or select ‘Ties’ in the notes
+            toolbox.</li>
+        </ul>
+
+        <h3>Untie notes</h3>
+        <ul>
+          <li>Select the note(s) you want to untie.</li>
+          <li>Press <span class="kbd">U</span> or click on the ‘Scissors‘
+            icon in the notes toolbox.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Repeats, 1st and 2nd endings</h2>
+
+        <h3>Repeats popover</h3>
+        <ul>
+          <li>Select the bars that comprise the first ending.</li>
+          <li>Press <kbd>Shift-R</kbd> to bring up the 'Repeats' popover.</li>
+          <li>Type 'end' to create 1st and 2nd endings.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Working with voices</h2>
+
+        <h3>Show voice colors</h3>
+        <p>Choose <span class="menu">View > Note And Rest Colors > Voice
+          Colors</span>.</p>
+
+        <h3>Start a new voice</h3>
+        <ul>
+          <li>Press <span class="kbd">Shift-V</span> while in note input.</li>
+          <li>A small note symbol appears at the bottom left of the orange
+            caret, showing a <span class="kbd">+</span> sign and a
+            downstem.</li>
+          <li>You can now start inputting notes/rests in that voice.</li>
+        </ul>
+
+        <h3>Select another voice</h3>
+        <p>Once a voice exists, you can enter notes into it anywhere on the
+          staff.</p>
+        <p>Within a particular bar, to cycle to the next voice, press
+          <span class="kbd">V</span>.</p>
+        <p>Once you have two or more voices active on a staff, you can cycle
+          between inputting into any of them simply by hitting
+          <span class="kbd">V</span>.</p>
+
+        <h3>Change the voice</h3>
+        <p>You can change the voice of existing notes as follows:</p>
+        <ul>
+          <li>Select the note(s) you want to move to a different voice.</li>
+          <li>Choose <span class="menu">Edit > Voices > Change Voice >
+            [Voice]</span>, or</li>
+          <li>choose the above options from the context menu.</li>
+        </ul>
+        <p>If there is only one voice on the staff, you can create a
+          new voice for your selected notes.</p>
+      </section>
+    </main>
+    <script src="dorico.js" type="module"></script>
+  </body>
+</html>

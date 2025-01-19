@@ -1,0 +1,110 @@
+/* section.css */
+
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+section {
+  margin-top: var(--vspacing);
+  padding: calc(var(--vspacing) / 2) 0;
+  border-top: 2px solid var(--border-grey);
+}
+
+section > h2 {
+  margin-top: 0;
+}
+
+section > h3 {
+  background-color: var(--light-grey);
+  font-size: 1rem;
+  margin-left: var(--hspacing);
+  padding: 0.25rem 0;
+}
+
+section p {
+  margin-top: 0.75rem;
+  margin-left: var(--hspacing);
+}
+
+/* section ul */
+
+section ul {
+  margin-top: 0;
+  margin-left: var(--hspacing);
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+section ul li {
+  margin-top: 0.5rem;
+}
+
+section ul li:first-child {
+  margin-top: 0.25rem;
+}
+
+/* section dl */
+
+section dl {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  column-gap: 0;
+  row-gap: 4px;
+  margin-top: 1rem;
+  margin-left: var(--hspacing);
+}
+
+section dl dt {
+  grid-column: 1 / 2;
+  padding: 0.25rem 0;
+}
+
+section dl dd {
+  grid-column: 2 / 3;
+  margin: 0;
+  padding: 0.25rem;
+}
+
+section dl dt:nth-of-type(odd),
+section dl dd:nth-of-type(odd) {
+  background-color: var(--light-grey);
+}
+
+section dl.narrow {
+  grid-template-columns: 12rem 12rem;
+}
+
+section dl.narrow > dd {
+  padding-right: 0.5rem;
+}
+
+section dl.medium {
+  grid-template-columns: 12rem 1fr;
+}
+
+section dl.wide {
+  grid-template-columns: 18% 1fr;
+  row-gap: 0.5rem;
+}
+
+/* section dl.numbered */
+
+section dl.numbered {
+  counter-reset: dt-counter;
+}
+
+section dl.numbered dt {
+  counter-increment: dt-counter;
+}
+
+section dl.numbered dt::before {
+  content: counter(dt-counter) ". ";
+}
+
+section dl.numbered dt::after {
+  content: ":";
+}

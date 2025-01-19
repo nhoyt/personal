@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dorico: Lead Sheets</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="section.css">
+  </head>
+  <body class="hidden">
+    <header>
+      <h1>Dorico Quick Reference</h1>
+      <nav-menu current="lead-sheets.html"></nav-menu>
+    </header>
+    <main>
+      <h1>Lead Sheets</h1>
+
+      <section>
+        <h2>Setup Mode</h2>
+
+        <h3>Create and configure project</h3>
+        <ul>
+          <li>Create an empty project, which places you in Setup Mode. Then add a Solo Player:
+          from Singers select 'Lead'.</li>
+          <li>Change the sound for this player by going into Play Mode and selecting a piano.
+          For example, in Halion, select Yamaha S90ES Piano.</li>
+          <li>In Engrave Mode, change the default font to 'Petaluma': go to
+          <span class="menu">Library > Music Fonts</span>.</li>
+        </ul>
+
+        <h3>Write mode</h3>
+        <ul>
+          <li>In Write Mode, change the clef: press <kbd>Shift-C</kbd> and type 'g' for standard
+          G clef.</li>
+          <li>Also change from 'Full Score' to the part named 'Lead' (from the drop-down menu at
+          the top of the window). This is not strictly necessary, but is useful if you begin to
+          change layout parameters.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Layout Options</h2>
+        <p>Launch the <span class="menu">Layout Options</span> dialog by pressing
+        <kbd>Shift-Cmd-L</kbd> or by selecting it from the
+        <span class="menu">Library</span> menu.</p>
+
+        <h3>Page Setup</h3>
+        <ul>
+          <li>In the <span class="menu">Flows</span> section, set 'Show flow headings' to
+          'Never'.</li>
+        </ul>
+
+        <h3>Players</h3>
+        <ul>
+          <li>In the <span class="menu">Bar Rests and Multi-bar Rests</span>, set the 'Consolidate'
+          option to 'None'.</li>
+        </ul>
+
+        <h3>Staves and Systems</h3>
+        <ul>
+          <li>In the <span class="menu">Staff Labels</span> section, change both
+          'Staff labels on first system' and 'Staff labels on subsequent systems' to 'None'.</li>
+          <li>Also in the <span class="menu">Staff Labels</span> section, change
+          'Indent first system of flow by' to '0'.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Notation Options</h2>
+        <p>Launch the <span class="menu">Notation Options</span> dialog by pressing
+        <kbd>Shift-Cmd-N</kbd> or by selecting it from the
+        <span class="menu">Library</span> menu.</p>
+
+        <h3>Clefs</h3>
+        <p>Under 'Clefs at start of systems following first system', select 'Hide clefs'.</p>
+
+        <h3>Key Signatures</h3>
+        <p>Under 'Key signatures at start of systems following first system', select
+        'Hide key signatures'.</p>
+      </section>
+    </main>
+    <script src="dorico.js" type="module"></script>
+  </body>
+</html>
