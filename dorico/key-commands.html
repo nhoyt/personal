@@ -18,7 +18,10 @@
       <section>
         <h2>Write mode: Insert notation items</h2>
 
-        <dl class="simple medium">
+        <dl class="medium">
+          <dt>Add rehearsal mark</dt>
+          <dd><span class="kbd">Shift-A</span></dd>
+
           <dt>Bars or barlines</dt>
           <dd><span class="kbd">Shift-B</span> → popover:
             <span class="txt">+3</span>, <span class="txt">:|</span></dd>
@@ -60,17 +63,13 @@
           <dt>Tempo marking</dt>
           <dd><span class="kbd">Shift-T</span> → popover:
             <span class="txt">q=112</span></dd>
-
-          <dt>Tuplets</dt>
-          <dd><span class="kbd">;</span> (semicolon) → popover:
-            <span class="txt">3:2, 3:2e (eighth notes)</span></dd>
         </dl>
       </section>
 
       <section>
-        <h2>Write mode: Input notes, add slurs &amp; ties</h2>
+        <h2>Write mode: Input notes, add dots, ties, tuplets, etc.</h2>
 
-        <dl class="simple narrow">
+        <dl class="medium">
           <dt>Start note input</dt>
           <dd><span class="kbd">Shift-N</span> or
             <span class="kbd">Return</span></dd>
@@ -80,6 +79,16 @@
 
           <dt>Input note or rest</dt>
           <dd><span class="kbd">A–G</span></dd>
+
+          <dt>Dotted note</dt>
+          <dd><span class="kbd">.</span> (period)</dd>
+
+          <dt>Input tuplet(s)</dt>
+          <dd><span class="kbd">;</span> (semicolon) → popover:
+            <span class="txt">3:2, 3:2e (eighth notes)</span></dd>
+
+          <dt>Turn off tuplets</dt>
+          <dd><span class="kbd">Shift-;</span> (semicolon)</dd>
 
           <dt>Add slur(s)</dt>
           <dd><span class="kbd">S</span></dd>
@@ -98,7 +107,7 @@
       <section>
         <h2>Write mode: Accidentals</h2>
 
-        <dl class="simple narrow">
+        <dl class="narrow">
           <dt>Natural</dt>
           <dd><span class="kbd">0</span></dd>
 
@@ -113,7 +122,7 @@
       <section>
         <h2>Write mode: Articulations</h2>
 
-        <dl class="simple narrow">
+        <dl class="narrow">
           <dt>Accent</dt>
           <dd><span class="kbd">[</span></dd>
 
@@ -121,7 +130,7 @@
           <dd><span class="kbd">]</span></dd>
 
           <dt>Marcato</dt>
-          <dd><span class="kbd">'</span> (apostrophe)</dd>
+          <dd><span class="kbd">'</span>&nbsp;&nbsp;&nbsp;&nbsp;(apostrophe)</dd>
 
           <dt>Tenuto</dt>
           <dd><span class="kbd">\</span></dd>
@@ -143,9 +152,9 @@
       <section>
         <h2>Write mode: Toggles</h2>
 
-        <dl class="simple narrow">
+        <dl class="narrow">
           <dt>Rest mode</dt>
-          <dd><span class="kbd">,</span> (comma)</dd>
+          <dd><span class="kbd">,</span>&nbsp;&nbsp;&nbsp;&nbsp;(comma)</dd>
 
           <dt>Insert mode</dt>
           <dd><span class="kbd">I</span></dd>
@@ -156,32 +165,77 @@
           <dt>Chord input</dt>
           <dd><span class="kbd">Q</span></dd>
 
+          <dt>Deselect all</dt>
+          <dd><span class="kbd">Cmd-D</span></dd>
+
           <dt>System track</dt>
           <dd><span class="kbd">Option-T</span></dd>
         </dl>
       </section>
 
       <section>
+        <h2>Playback Controls</h2>
+
+        <dl class="narrow">
+          <dt>Play from playhead/stop</dt>
+          <dd><span class="kbd">Space</span></dd>
+
+          <dt>Play from selection</dt>
+          <dd><span class="kbd">P</span></dd>
+
+          <dt>Play from last start position</dt>
+          <dd><span class="kbd">Shift-Space</span></dd>
+
+          <dt>Play from playhead</dt>
+          <dd><span class="kbd">Keypad Enter</span></dd>
+
+          <dt>Stop playback</dt>
+          <dd><span class="kbd">Keypad 0</span></dd>
+
+          <dt>Return to start of flow</dt>
+          <dd><span class="kbd">Keypad .</span>&nbsp;&nbsp;&nbsp;&nbsp;(dot)</dd>
+
+          <dt>Rewind</dt>
+          <dd><span class="kbd">Keypad -</span>&nbsp;&nbsp;&nbsp;&nbsp;(minus)</dd>
+
+          <dt>Fast forward</dt>
+          <dd><span class="kbd">Keypad +</span>&nbsp;&nbsp;&nbsp;&nbsp;(plus)</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Navigation</h2>
+
+        <dl class="narrow">
+          <dt>Move view left</dt>
+          <dd><span class="kbd">Home</span></dd>
+
+          <dt>Move view right</dt>
+          <dd><span class="kbd">End</span></dd>
+
+          <dt>Move to beginning of project</dt>
+          <dd><span class="kbd">Cmd-Home</span></dd>
+
+          <dt>Move to end of project</dt>
+          <dd><span class="kbd">Cmd-End</span></dd>
+        </dl>
+      </section>
+
+      <section>
         <h2>Miscellaneous</h2>
 
-        <dl class="simple narrow">
+        <dl class="narrow">
           <dt>New project</dt>
           <dd><span class="kbd">Cmd-N</span></dd>
 
           <dt>Project info</dt>
           <dd><span class="menu">File > Project Info</span></dd>
 
-          <dt>Beginning of project</dt>
-          <dd><span class="kbd">Cmd-Home</span></dd>
-
-          <dt>End of project</dt>
-          <dd><span class="kbd">Cmd-End</span></dd>
-
           <dt>Launch Dorico Elements</dt>
-          <dd><span class="kbd">Option-Click</span> icon</dd>
+          <dd><span class="kbd">Option-Click</span> app icon</dd>
 
           <dt>Launch Dorico SE</dt>
-          <dd><span class="kbd">Cmd-Click</span> icon</dd>
+          <dd><span class="kbd">Cmd-Click</span> app icon</dd>
         </dl>
       </section>
     </main>

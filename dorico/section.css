@@ -75,7 +75,7 @@ section dl dd:nth-of-type(odd) {
 }
 
 section dl.narrow {
-  grid-template-columns: 12rem 12rem;
+  grid-template-columns: 15rem 12rem;
 }
 
 section dl.narrow > dd {
@@ -83,7 +83,7 @@ section dl.narrow > dd {
 }
 
 section dl.medium {
-  grid-template-columns: 12rem 1fr;
+  grid-template-columns: 15rem 1fr;
 }
 
 section dl.wide {
